@@ -32,5 +32,6 @@ class SendChirpCreatedNotifications
 
         Log::info('New Chirp created. Notification for users is commented out.');
         // need to check out logging features and setup in config\logging.php
+        // https://laravel.com/docs/11.x/logging
     }
 }
