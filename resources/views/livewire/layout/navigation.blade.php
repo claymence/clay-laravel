@@ -37,16 +37,23 @@ new class extends Component
                     <x-nav-link :href="route('chirps')" :active="request()->routeIs('chirps')" wire:navigate>
                         {{ __('Chirps') }}
                     </x-nav-link>
-                </div>
 
-                <!-- Navigation Links 2 -->
-                @can('has-permission', 'manage_users')
-                    <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('jwst')" :active="request()->routeIs('jwst')" wire:navigate>
+                        {{ __('JWST') }}
+                    </x-nav-link>
+
+                    @can('has-permission', 'view_admin-dashboard')
                         <x-nav-link :href="route('admin-dashboard')" :active="request()->routeIs('admin-dashboard')" wire:navigate>
                             {{ __('Admin Dashboard') }}
                         </x-nav-link>
-                    </div>
-                @endcan
+                    @endcan
+
+                    @can('has-permission', 'view_dev-sandbox')
+                        <x-nav-link :href="route('dev-sandbox')" :active="request()->routeIs('dev-sandbox')" wire:navigate>
+                            {{ __('Dev Sandbox') }}
+                        </x-nav-link>
+                    @endcan
+                </div>
             </div>
 
             <!-- Settings Dropdown -->
@@ -105,16 +112,23 @@ new class extends Component
             <x-responsive-nav-link :href="route('chirps')" :active="request()->routeIs('chirps')" wire:navigate>
                 {{ __('Chirps') }}
             </x-responsive-nav-link>
-        </div>
 
-        <!-- resp. nav links 2 -->
-        @can('has-permission', 'manage_users')
-            <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('jwst')" :active="request()->routeIs('jwst')" wire:navigate>
+                {{ __('JWST') }}
+            </x-responsive-nav-link>
+
+            @can('has-permission', 'view_admin-dashboard')
                 <x-responsive-nav-link :href="route('admin-dashboard')" :active="request()->routeIs('admin-dashboard')" wire:navigate>
                     {{ __('Admin Dashboard') }}
                 </x-responsive-nav-link>
-            </div>
-        @endcan
+            @endcan
+
+            @can('has-permission', 'view_dev-sandbox')
+                <x-responsive-nav-link :href="route('dev-sandbox')" :active="request()->routeIs('dev-sandbox')" wire:navigate>
+                    {{ __('Dev Sandbox') }}
+                </x-responsive-nav-link>
+            @endcan
+        </div>
 
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200">

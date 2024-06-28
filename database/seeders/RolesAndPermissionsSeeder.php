@@ -17,6 +17,10 @@ class RolesAndPermissionsSeeder extends Seeder
     public function run(): void
     {
         DB::transaction(function () {
+/* 
+            command for running this seeder:
+            php artisan db:seed --class=RolesAndPermissionsSeeder
+ */
 
             // Define roles
             $roles = [
@@ -31,6 +35,7 @@ class RolesAndPermissionsSeeder extends Seeder
                 'manage_users',
                 'view_dashboard',
                 'view_admin-dashboard',
+                'view_dev-sandbox',
             ];
 
             // Create roles and store them in an associative array

@@ -13,7 +13,7 @@ class AdminDashboardController extends Controller
     {
         //return view('admin-dashboard');
 
-        return view('admin-dashboard', [
+        return view('admin-dashboard.index', [
             //
         ]);
     }
