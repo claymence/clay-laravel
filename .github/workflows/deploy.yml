@@ -26,6 +26,9 @@ jobs:
       - name: Debug Storage Directory
         run: ls -la storage/framework/cache/data
 
+      - name: Debug View Configuration
+        run: php -r "print_r(config('cache'));"
+
       - name: Install Composer dependencies
         run: composer install --no-progress --prefer-dist --optimize-autoloader
 
