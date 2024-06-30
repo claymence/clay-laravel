@@ -40,7 +40,10 @@ jobs:
           php artisan optimize
       
       - name: Clean up unnecessary directories
-        run: rm -rf node_modules
+        run: |
+          rm -rf node_modules
+          rm -rf .git
+          rm -rf .github
 
       - name: Deploy to FTP server
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
