@@ -1,4 +1,5 @@
 <div>
+    <button wire:click="fetchPlayerData">Fetch Player Data</button>
     @foreach($playerData as $category => $players)
         @if(!empty($players))
         <article class="bg-white shadow-lg p-4 mb-4">

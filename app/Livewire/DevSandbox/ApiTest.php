@@ -9,10 +9,10 @@ class ApiTest extends Component
 {
     public $playerData = [];
 
-    public function mount(): void
+    /* public function mount(): void
     {
         $this->fetchPlayerData();
-    }
+    } */
 
     public function fetchPlayerData(): void
     {
