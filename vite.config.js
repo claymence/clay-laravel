@@ -11,7 +11,7 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    //added for debugging while deployment
+    //added for debugging while deployment (cors)
     server: {
         cors: true,
     },
