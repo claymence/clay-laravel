@@ -54,3 +54,4 @@ jobs:
             .env
             database.sqlite
             node_modules/
+          timeout: 60000
