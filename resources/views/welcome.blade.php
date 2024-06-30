@@ -48,7 +48,7 @@
                                     </p>
 
                                     <p class="mt-4 text-sm/relaxed">
-                                        source code at <a href="https://github.com/claymence/clay-laravel" target="_blank">GitHub</a>
+                                        source code at <a href="https://github.com/claymence/clay-laravel/tree/deploy" target="_blank">GitHub</a>
                                     </p>
 
                                 </div>
