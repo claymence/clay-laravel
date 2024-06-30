@@ -27,7 +27,7 @@ jobs:
         run: ls -la storage/framework/cache/data
 
       - name: Debug View Configuration
-        run: php -r "print_r(config('cache'));"
+        run: php -r "print_r(config('view'));"
 
       - name: Install Composer dependencies
         run: composer install --no-progress --prefer-dist --optimize-autoloader
