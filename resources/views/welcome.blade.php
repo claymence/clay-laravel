@@ -14,8 +14,6 @@
         <!-- Styles -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-        
-
     </head>
     <body class="antialiased font-sans">
         <div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
@@ -61,6 +59,5 @@
                 </div>
             </div>
         </div>
-
     </body>
 </html>
