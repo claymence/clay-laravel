@@ -39,7 +39,7 @@ jobs:
           php artisan view:cache
           php artisan optimize
 
-      - name: Clear cache and config (only debugging or keep it?)
+      - name: Clear cache and config (used for debugging - keep it?)
         run: |
           php artisan config:clear
           php artisan cache:clear
@@ -47,7 +47,7 @@ jobs:
       - name: Clean up unnecessary directories
         run: rm -rf node_modules
 
-      - name: Deploy to FTP server
+      - name: Deploy to FTP server (excluding public dir, see next step)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.DEPLOY_FTP_SERVER }}
@@ -63,7 +63,7 @@ jobs:
             **/node_modules/**
             public/**
 
-      - name: Clear and deploy public directory
+      - name: Clear and deploy public directory (solved deployment issue)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.DEPLOY_FTP_SERVER }}

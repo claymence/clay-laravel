@@ -14,8 +14,7 @@
         <!-- Styles -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-        <!-- added for debugging while deployment -->
-        @livewireStyles
+        
 
     </head>
     <body class="antialiased font-sans">
@@ -63,7 +62,5 @@
             </div>
         </div>
 
-        <!-- added for debugging while deployment -->
-        @livewireScripts
     </body>
 </html>
