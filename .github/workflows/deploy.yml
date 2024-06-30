@@ -47,3 +47,6 @@ jobs:
           password: ${{ secrets.DEPLOY_FTP_PASSWORD }}
           local-dir: ./
           server-dir: /
+          exclude: |
+            .env
+            database.sqlite
