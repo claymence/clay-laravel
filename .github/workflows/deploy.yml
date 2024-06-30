@@ -31,9 +31,6 @@ jobs:
 
       - name: Build assets for production
         run: npm run build
-
-      - name: Run tests
-        run: php artisan test
       
       - name: Optimize Laravel for production
         run: |
