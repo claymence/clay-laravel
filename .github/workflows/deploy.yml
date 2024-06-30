@@ -38,6 +38,11 @@ jobs:
           php artisan route:cache
           php artisan view:cache
           php artisan optimize
+
+      - name: Clear cache and config (only debugging or keep it?)
+        run: |
+          php artisan config:clear
+          php artisan cache:clear
       
       - name: Clean up unnecessary directories
         run: rm -rf node_modules
