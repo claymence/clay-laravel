@@ -69,8 +69,8 @@ jobs:
           server: ${{ secrets.DEPLOY_FTP_SERVER }}
           username: ${{ secrets.DEPLOY_FTP_USERNAME }}
           password: ${{ secrets.DEPLOY_FTP_PASSWORD }}
-          local-dir: ./public
-          server-dir: /public
+          local-dir: ./public/
+          server-dir: /public/
           exclude: |
             .env
             database.sqlite
