@@ -44,7 +44,7 @@
                                     </h2>
 
                                     <p class="mt-4 text-sm/relaxed">
-                                        welcome to my project
+                                        welcome to my personal demo / testing project
                                     </p>
 
                                     <p class="mt-4 text-sm/relaxed">
