@@ -36,7 +36,7 @@ auth.json
 /storage/logs
 
 # Composer
-composer.lock
+# composer.lock
 
 # NPM
 npm-debug.log
