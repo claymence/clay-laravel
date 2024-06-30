@@ -50,3 +50,6 @@ jobs:
           exclude: |
             .env
             database.sqlite
+            node_modules/
+            .git/
+            .github/
