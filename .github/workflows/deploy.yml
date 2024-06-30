@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-
-      - name: Checkout code
-        uses: actions/checkout@v4
 
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
@@ -43,7 +43,7 @@ jobs:
           php artisan optimize
 
       - name: Deploy to FTP server
-        uses: SamKirkland/FTP-Deploy-Action@4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           ftp-server: ftp://${{ secrets.DEPLOY_FTP_SERVER }}
           ftp-username: ${{ secrets.DEPLOY_FTP_USERNAME }}
