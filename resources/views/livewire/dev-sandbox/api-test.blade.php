@@ -1,5 +1,5 @@
 <div>
-    <button wire:click="fetchPlayerData">Fetch Player Data</button>
+    <button wire:click="fetchPlayerData">Fetch top 10 leaderboards from lichess.org API</button>
     @foreach($playerData as $category => $players)
         @if(!empty($players))
         <article class="bg-white shadow-lg p-4 mb-4">

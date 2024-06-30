@@ -1,5 +1,5 @@
 <div>
-    <button wire:click="fetchData">Fetch Data</button>
+    <button wire:click="fetchData">Fetch Data (suffix list from jwstapi.com API)</button>
     @if($error)
         <div>Error: {{ $error }}</div>
     @else

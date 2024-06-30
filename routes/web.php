@@ -23,7 +23,7 @@ example:
     ->name('root');
 
 Route::view('dashboard', 'dashboard')
-    ->middleware(['auth', 'verified', 'role:view_dashboard'])
+    ->middleware(['auth', 'verified'])
     ->name('dashboard');
 
 Route::view('profile', 'profile')
@@ -39,11 +39,11 @@ Route::get('/jwst', [JwstController::class, 'index'])
     ->name('jwst');
 
 Route::get('admin-dashboard', [AdminDashboardController::class, 'index'])
-    ->middleware(['auth', 'role:manage_users'])
+    ->middleware(['auth', 'verified', 'role:manage_users'])
     ->name('admin-dashboard');
 
 Route::get('dev-sandbox', [DevSandboxController::class, 'index'])
-    ->middleware(['auth'])
+    ->middleware(['auth', 'verified', 'role:view_dev-sandbox'])
     ->name('dev-sandbox');
 
 require __DIR__.'/auth.php';
