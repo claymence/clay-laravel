@@ -62,5 +62,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- added for debugging while deployment -->
+        @livewireScripts
     </body>
 </html>

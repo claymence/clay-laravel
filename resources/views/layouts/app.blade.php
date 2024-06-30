@@ -16,7 +16,7 @@
 
         <!-- added for debugging while deployment -->
         @livewireStyles
-        
+
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
@@ -36,5 +36,8 @@
                 {{ $slot }}
             </main>
         </div>
+
+        <!-- added for debugging while deployment -->
+        @livewireScripts
     </body>
 </html>
