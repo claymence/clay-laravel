@@ -14,5 +14,5 @@ stockfish features for training/analyzing (blunder warnings, ..)
 playing chess against other users
 
 ## deployment
-the 'deploy' branch gets deployed at claymence.de on push
+the 'deploy' branch gets deployed at [claymence.de](https://claymence.de/) on push
 .github\workflows\deploy.yml
