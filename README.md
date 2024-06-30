@@ -8,12 +8,13 @@ a web app made with laravel
 - testing lichess.org API
 
 ## planned features
-- browse pictures from JWST (James Webb Space Telescope) API
+- browse images from JWST (James Webb Space Telescope) API
+- like / vote for showcase images
 - playing chess against stockfish (chess engine)
 - stockfish features for training/analyzing (blunder warnings, ..)
 - playing chess against other users
 
 ## deployment
-the 'deploy' branch gets deployed at [claymence.de](https://claymence.de/) on push
+the `deploy` branch gets deployed at [claymence.de](https://claymence.de/) on push
 
-.github\workflows\deploy.yml
+[.github\workflows\deploy.yml](https://github.com/claymence/clay-laravel/blob/deploy/.github/workflows/deploy.yml)
