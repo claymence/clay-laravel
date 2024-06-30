@@ -53,5 +53,7 @@ jobs:
           exclude: |
             .env
             database.sqlite
-            node_modules/
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
           timeout: 60000
