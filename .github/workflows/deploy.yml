@@ -61,7 +61,7 @@ jobs:
             **/.git*
             **/.git*/**
             **/node_modules/**
-          timeout: 60000
+            public/**
 
       - name: Clear and deploy public directory
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -71,9 +71,4 @@ jobs:
           password: ${{ secrets.DEPLOY_FTP_PASSWORD }}
           local-dir: ./public/
           server-dir: /public/
-          exclude: |
-            .env
-            database.sqlite
-            node_modules/
-          timeout: 60000
           dangerous-clean-slate: true
