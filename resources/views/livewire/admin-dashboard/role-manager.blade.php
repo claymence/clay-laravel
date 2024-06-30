@@ -20,7 +20,7 @@
                         @endforeach
                     </td>
                     <td class="border px-4 py-2">
-                        <button wire:click="updateRolePermissions({{ $role->id }})" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        <button wire:click="updateRolePermissions({{ $role->id }})">
                             Save
                         </button>
                     </td>
