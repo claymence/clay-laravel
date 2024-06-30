@@ -38,6 +38,9 @@ jobs:
           php artisan route:cache
           php artisan view:cache
           php artisan optimize
+      
+      - name: Clean up unnecessary directories
+        run: rm -rf node_modules
 
       - name: Deploy to FTP server
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
