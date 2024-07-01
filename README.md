@@ -1,15 +1,19 @@
 # clay-laravel
-a web app made with laravel
+a web app made with laravel & livewire
 
 ## features
 - user registration and login
 - user and role administration
+- "chirps" (microblog example from laravel tutorial)
 - testing jwstapi.com API
 - testing lichess.org API
 
 ## planned features
+- e-mail verification
+- e-mail notifications
+- user settings
 - browse images from JWST (James Webb Space Telescope) API
-- like / vote for showcase images
+- like / vote for JWST showcase images
 - playing chess against stockfish (chess engine)
 - stockfish features for training/analyzing (blunder warnings, ..)
 - playing chess against other users
