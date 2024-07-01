@@ -18,3 +18,40 @@ a web app made with laravel
 the `deploy` branch gets deployed at [claymence.de](https://claymence.de/) on push
 
 [.github\workflows\deploy.yml](https://github.com/claymence/clay-laravel/blob/deploy/.github/workflows/deploy.yml)
+
+## documentation
+
+### entity relationship diagram
+```mermaid
+erDiagram
+    USER {
+        int id PK
+        string name
+        string email
+        string password
+        int role_id FK
+    }
+    
+    ROLE {
+        int id PK
+        string name
+    }
+    
+    PERMISSION {
+        int id PK
+        string name
+    }
+    
+    CHIRP {
+        int id PK
+        string content
+        int user_id FK
+    }
+    
+    USER ||--o{ ROLE : "belongs to"
+    ROLE ||--o{ USER : "has many"
+    USER ||--o{ CHIRP : "has many"
+    CHIRP ||--o{ USER : "belongs to"
+    ROLE ||--o{ PERMISSION : "has many through role_permission"
+    PERMISSION ||--o{ ROLE : "belongs to many through role_permission"
+```
