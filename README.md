@@ -19,7 +19,7 @@ a web app made with laravel & livewire
 - playing chess against other users
 
 ## deployment
-the `deploy` branch gets deployed at [claymence.de](https://claymence.de/) on push
+the [`deploy`](https://github.com/claymence/clay-laravel/tree/deploy) branch gets deployed at [claymence.de](https://claymence.de/) on push
 
 [.github\workflows\deploy.yml](https://github.com/claymence/clay-laravel/blob/deploy/.github/workflows/deploy.yml)
 
