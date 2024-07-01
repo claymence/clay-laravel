@@ -46,12 +46,6 @@ erDiagram
         string name
     }
     
-    CHIRP {
-        int id PK
-        string content
-        int user_id FK
-    }
-    
     ROLE_PERMISSION {
         int role_id FK
         int permission_id FK
@@ -63,7 +57,13 @@ erDiagram
         json preferences
         string theme
     }
-    
+
+    CHIRP {
+        int id PK
+        string content
+        int user_id FK
+    }
+
     USER ||--o{ ROLE : "belongs to"
     ROLE ||--o{ USER : "has many"
     USER ||--o{ CHIRP : "has many"
