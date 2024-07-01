@@ -21,7 +21,7 @@ a web app made with laravel & livewire
 ## deployment
 the [`deploy`](https://github.com/claymence/clay-laravel/tree/deploy) branch gets deployed at [claymence.de](https://claymence.de/) on push
 
-[.github\workflows\deploy.yml](https://github.com/claymence/clay-laravel/blob/deploy/.github/workflows/deploy.yml)
+[`.github\workflows\deploy.yml`](https://github.com/claymence/clay-laravel/blob/deploy/.github/workflows/deploy.yml)
 
 ## documentation
 
