@@ -52,10 +52,17 @@ erDiagram
         int user_id FK
     }
     
+    ROLE_PERMISSION {
+        int role_id FK
+        int permission_id FK
+    }
+    
     USER ||--o{ ROLE : "belongs to"
     ROLE ||--o{ USER : "has many"
     USER ||--o{ CHIRP : "has many"
     CHIRP ||--o{ USER : "belongs to"
-    ROLE ||--o{ PERMISSION : "has many through role_permission"
-    PERMISSION ||--o{ ROLE : "belongs to many through role_permission"
+    ROLE ||--o{ ROLE_PERMISSION : "has many"
+    PERMISSION ||--o{ ROLE_PERMISSION : "has many"
+    ROLE_PERMISSION }o--|| ROLE : "belongs to"
+    ROLE_PERMISSION }o--|| PERMISSION : "belongs to"
 ```
