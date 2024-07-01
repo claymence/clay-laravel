@@ -3,6 +3,7 @@
 use App\Http\Controllers\JwstController;
 use App\Http\Controllers\DevSandboxController;
 use App\Http\Controllers\AdminDashboardController;
+use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\ChirpController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,6 +30,10 @@ Route::view('dashboard', 'dashboard')
 Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
+
+Route::get('settings', [SettingsController::class, 'index'])
+    ->middleware(['auth', 'verified'])
+    ->name('settings');
 
 Route::get('chirps', [ChirpController::class, 'index'])
     ->middleware(['auth', 'verified'])

@@ -1,5 +1,5 @@
 # clay-laravel
-a web app made with laravel & livewire
+a web app made with laravel, livewire & tailwind css
 
 ## features
 - user registration and login
@@ -57,6 +57,13 @@ erDiagram
         int permission_id FK
     }
     
+    SETTING {
+        int id PK
+        int user_id FK
+        json preferences
+        string theme
+    }
+    
     USER ||--o{ ROLE : "belongs to"
     ROLE ||--o{ USER : "has many"
     USER ||--o{ CHIRP : "has many"
@@ -65,4 +72,6 @@ erDiagram
     PERMISSION ||--o{ ROLE_PERMISSION : "has many"
     ROLE_PERMISSION }o--|| ROLE : "belongs to"
     ROLE_PERMISSION }o--|| PERMISSION : "belongs to"
+    USER ||--|| SETTING : "has one"
+    SETTING ||--|| USER : "belongs to"
 ```
