@@ -27,9 +27,14 @@ class SecurityHeadersMiddleware
 
         //$response->headers->set('Content-Security-Policy', "default-src 'self' 'nonce-$nonce'; script-src 'self' 'nonce-$nonce'; style-src 'self' 'nonce-$nonce'; font-src 'self' 'nonce-$nonce' https://fonts.bunny.net/; object-src 'none'; frame-ancestors 'none'");
         
-        $response->headers->set(
+        /* $response->headers->set(
             'Content-Security-Policy', 
             "font-src 'self' 'nonce-$nonce' https://fonts.bunny.net/; object-src 'none'; frame-ancestors 'none'"
+            ); */
+
+        $response->headers->set(
+            'Content-Security-Policy', 
+            "font-src 'self' 'nonce-$nonce' https://fonts.bunny.net/; frame-ancestors 'none'"
             );
 
         return $response;
