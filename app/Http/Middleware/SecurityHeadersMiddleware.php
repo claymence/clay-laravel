@@ -36,6 +36,8 @@ class SecurityHeadersMiddleware
             'Content-Security-Policy', 
             "font-src 'self' 'nonce-$nonce' https://fonts.bunny.net/; object-src 'none'; frame-ancestors 'none'"
             ); */
+        
+        //a
 
         return $response;
     }
