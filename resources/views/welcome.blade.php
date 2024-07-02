@@ -7,11 +7,18 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.bunny.net" nonce="{{ $nonce }}">
+        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" nonce="{{ $nonce }}" />
 
         <!-- Styles -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <!-- {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}} -->
+        <!-- implemented nonce for CSP after security check -->
+        @php
+            $cssUrl = Vite::asset('resources/css/app.css');
+            $jsUrl = Vite::asset('resources/js/app.js');
+        @endphp
+        <link rel="stylesheet" href="{{ $cssUrl }}" nonce="{{ $nonce }}">
+        <script src="{{ $jsUrl }}" nonce="{{ $nonce }}" defer></script>
 
     </head>
     <body class="antialiased font-sans">
