@@ -19,7 +19,7 @@ class SecurityHeadersMiddleware
     {
         $response = $next($request);
         $response->headers->set('X-Frame-Options', 'DENY');
-        $response->headers->set('Content-Security-Policy', "frame-ancestors 'none'");
+        $response->headers->set('Content-Security-Policy', "default-src 'self'; script-src 'self'; object-src 'none'; frame-ancestors 'none'");
 
         return $response;
     }
