@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Middleware\RoleMiddleware;
+use App\Http\Middleware\SecurityHeadersMiddleware;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
@@ -12,9 +13,18 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
+
         // role middleware for permission checks
         $middleware->alias(['role' => RoleMiddleware::class]);
+
+        // security headers middleware for clickjacking protection
+        $middleware->alias(['security.headers' => SecurityHeadersMiddleware::class]);
+
+        // Prepend SecurityHeadersMiddleware to run on every HTTP request
+        $middleware->prepend(SecurityHeadersMiddleware::class);
+
     })
+
     ->withExceptions(function (Exceptions $exceptions) {
         //
     })->create();
