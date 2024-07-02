@@ -34,7 +34,7 @@ class SecurityHeadersMiddleware
 
         $response->headers->set(
             'Content-Security-Policy', 
-            "default-src 'self' 'nonce-$nonce' https://claymence.de/; font-src 'self' 'nonce-$nonce' https://fonts.bunny.net/; frame-ancestors 'none'"
+            "font-src 'self' 'nonce-$nonce' https://fonts.bunny.net/; object-src 'none'; frame-ancestors 'none'"
             );
 
         return $response;
