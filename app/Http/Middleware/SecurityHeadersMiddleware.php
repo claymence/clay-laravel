@@ -24,7 +24,7 @@ class SecurityHeadersMiddleware
 
         $response->headers->set('X-Content-Type-Options', 'nosniff');
 
-        $response->headers->set('Referrer-Policy', 'strict-origin-when-cross-origin');
+        $response->headers->set('Referrer-Policy', 'no-referrer');
 
         //nonce globally shared from app\Providers\AppServiceProvider.php
         $nonce = View::shared('nonce');
