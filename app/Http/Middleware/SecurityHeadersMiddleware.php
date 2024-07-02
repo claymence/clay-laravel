@@ -32,10 +32,10 @@ class SecurityHeadersMiddleware
             "font-src 'self' 'nonce-$nonce' https://fonts.bunny.net/; object-src 'none'; frame-ancestors 'none'"
             ); */
 
-        $response->headers->set(
+        /* $response->headers->set(
             'Content-Security-Policy', 
             "font-src 'self' 'nonce-$nonce' https://fonts.bunny.net/; object-src 'none'; frame-ancestors 'none'"
-            );
+            ); */
 
         return $response;
     }
