@@ -22,6 +22,9 @@ return Application::configure(basePath: dirname(__DIR__))
 
         // Prepend SecurityHeadersMiddleware to run on every HTTP request
         $middleware->prepend(SecurityHeadersMiddleware::class);
+        // DEBUGGING
+        // Append SecurityHeadersMiddleware to run on every HTTP request
+        //$middleware->append(SecurityHeadersMiddleware::class);
 
     })
 
