@@ -17,8 +17,9 @@ class ContentSecurityPolicy extends Policy
     public function configure()
     {
         $this
+            //default-src 'none' to only allow specified resources
             /* ->addDirective(Directive::DEFAULT, [
-                'self'
+                'none'
             ]) */
 
             /* ->addDirective(Directive::SCRIPT, [
