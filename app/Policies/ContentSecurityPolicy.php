@@ -21,11 +21,11 @@ class ContentSecurityPolicy extends Policy
                 'self'
             ]) */
 
-            ->addDirective(Directive::SCRIPT, [
+            /* ->addDirective(Directive::SCRIPT, [
                 'self'
-            ])
+            ]) */
 
-            ->addNonceForDirective(Directive::SCRIPT)
+            //->addNonceForDirective(Directive::SCRIPT)
             //nonce setup / vite integration in app\Support\LaravelViteNonceGenerator.php
 
             /* ->addDirective(Directive::STYLE, [
