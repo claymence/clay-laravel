@@ -17,9 +17,6 @@ return Application::configure(basePath: dirname(__DIR__))
         // role middleware for permission checks
         $middleware->alias(['role' => RoleMiddleware::class]);
 
-        // security headers middleware for clickjacking protection
-        //$middleware->alias(['security.headers' => SecurityHeadersMiddleware::class]);
-
         // Prepend SecurityHeadersMiddleware to run on every HTTP request
         $middleware->prepend(SecurityHeadersMiddleware::class);
         // DEBUGGING
