@@ -36,12 +36,12 @@ class SecurityHeadersMiddleware
         
         /* $response->headers->set(
             'Content-Security-Policy', 
-            "font-src 'self' 'nonce-$nonce' https://fonts.bunny.net/; object-src 'none'; frame-ancestors 'none'"
+            "font-src 'self' 'nonce-$nonce' https://fonts.bunny.net/; object-src 'none'; frame-ancestors 'none'; form-action 'self'"
         ); */
 
         $response->headers->set(
             'Content-Security-Policy', 
-            "font-src 'self' 'nonce-$nonce' https://fonts.bunny.net/; object-src 'none'; frame-ancestors 'none'"
+            "font-src 'self' 'nonce-$nonce' https://fonts.bunny.net/; object-src 'none'; frame-ancestors 'none'; form-action 'self'"
         );
 
         return $response;
