@@ -26,23 +26,19 @@ class SecurityHeadersMiddleware
 
         $response->headers->set('Referrer-Policy', 'no-referrer');
 
+        //commenting out my CSP implementation to re place it with composer package spatie/laravel-csp
         //nonce globally shared from app\Providers\AppServiceProvider.php
-        $nonce = View::shared('nonce');
+        /* $nonce = View::shared('nonce'); */
 
         /* $response->headers->set(
             'Content-Security-Policy', 
-            "default-src 'self' 'nonce-$nonce'; script-src 'self' 'nonce-$nonce'; style-src 'self' 'nonce-$nonce'; font-src 'self' 'nonce-$nonce' https://fonts.bunny.net/; object-src 'none'; frame-ancestors 'none'"
+            "default-src 'self' 'nonce-$nonce'; script-src 'self' 'nonce-$nonce'; style-src 'self' 'nonce-$nonce'; font-src 'self' 'nonce-$nonce' https://fonts.bunny.net/; object-src 'none'; frame-ancestors 'none'; form-action 'self'"
         ); */
-        
+
         /* $response->headers->set(
             'Content-Security-Policy', 
             "font-src 'self' 'nonce-$nonce' https://fonts.bunny.net/; object-src 'none'; frame-ancestors 'none'; form-action 'self'"
         ); */
-
-        $response->headers->set(
-            'Content-Security-Policy', 
-            "font-src 'self' 'nonce-$nonce' https://fonts.bunny.net/; object-src 'none'; frame-ancestors 'none'; form-action 'self'"
-        );
 
         return $response;
     }
