@@ -17,11 +17,9 @@ return Application::configure(basePath: dirname(__DIR__))
         // role middleware for permission checks
         $middleware->alias(['role' => RoleMiddleware::class]);
 
-        // Prepend SecurityHeadersMiddleware to run on every HTTP request
+        // Append / prepend SecurityHeadersMiddleware to run on every HTTP request
+        // use append() or prepend() ?
         $middleware->prepend(SecurityHeadersMiddleware::class);
-        // DEBUGGING
-        // Append SecurityHeadersMiddleware to run on every HTTP request
-        //$middleware->append(SecurityHeadersMiddleware::class);
 
     })
 
