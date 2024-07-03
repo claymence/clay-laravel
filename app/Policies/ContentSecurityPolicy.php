@@ -54,6 +54,10 @@ class ContentSecurityPolicy extends Policy
                 'none'
             ])
 
+            ->addDirective(Directive::BASE, [
+                'self'
+            ])
+
         ;
     }
 }
