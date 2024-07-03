@@ -28,6 +28,7 @@ class SecurityHeadersMiddleware
 
         //commenting out my CSP implementation to re place it with composer package spatie/laravel-csp
         //new CSP setup in app\Policies\ContentSecurityPolicy.php
+        //new nonce setup in app\Support\LaravelViteNonceGenerator.php
         //nonce globally shared from app\Providers\AppServiceProvider.php
         /* $nonce = View::shared('nonce'); */
 

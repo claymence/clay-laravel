@@ -12,23 +12,48 @@ use Spatie\Csp\Policies\Policy;
 class ContentSecurityPolicy extends Policy
 {
     /**
-     * Create a new policy instance.
-     */
-    public function __construct()
-    {
-        //
-    }
-
-    /**
      * Configure the policy directives.
      */
     public function configure()
     {
         $this
-            ->addDirective(Directive::FONT, ['https://fonts.bunny.net/'])
-            ->addDirective(Directive::FORM_ACTION, 'self')
-            ->addDirective(Directive::OBJECT, 'none')
-            ->addDirective(Directive::FRAME, 'none')
+            /* ->addDirective(Directive::DEFAULT, [
+                'self'
+            ]) */
+
+            ->addDirective(Directive::SCRIPT, [
+                'self'
+            ])
+
+            ->addNonceForDirective(Directive::SCRIPT)
+            //nonce setup / vite integration in app\Support\LaravelViteNonceGenerator.php
+
+            /* ->addDirective(Directive::STYLE, [
+                'self'
+            ]) */
+
+            //->addNonceForDirective(Directive::STYLE)
+
+            ->addDirective(Directive::FONT, [
+                'https://fonts.bunny.net/'
+            ])
+
+            ->addDirective(Directive::FORM_ACTION, [
+                'self'
+            ])
+
+            ->addDirective(Directive::OBJECT, [
+                'none'
+            ])
+
+            ->addDirective(Directive::FRAME, [
+                'none'
+            ])
+
+            ->addDirective(Directive::FRAME_ANCESTORS, [
+                'none'
+            ])
+
         ;
     }
 }

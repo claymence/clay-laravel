@@ -12,8 +12,6 @@
 
         <!-- Styles -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-        <!-- implemented nonce for CSP after security check -->
-        <!-- removed nonce approach for debugging -->
 
     </head>
     <body class="antialiased font-sans">
