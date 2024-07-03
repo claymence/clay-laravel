@@ -27,6 +27,7 @@ class SecurityHeadersMiddleware
         $response->headers->set('Referrer-Policy', 'no-referrer');
 
         //commenting out my CSP implementation to re place it with composer package spatie/laravel-csp
+        //new CSP setup in app\Policies\ContentSecurityPolicy.php
         //nonce globally shared from app\Providers\AppServiceProvider.php
         /* $nonce = View::shared('nonce'); */
 
