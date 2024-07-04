@@ -1,5 +1,7 @@
 # clay-laravel
-a web app made with laravel, livewire & tailwind css
+my personal web app project
+
+*Laravel, Livewire, Tailwind CSS, OOP, MVC*
 
 ## features
 - user registration and login
