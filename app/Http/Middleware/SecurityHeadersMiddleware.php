@@ -5,7 +5,6 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Illuminate\Support\Facades\View;
 
 class SecurityHeadersMiddleware
 {
@@ -25,6 +24,8 @@ class SecurityHeadersMiddleware
         $response->headers->set('X-Content-Type-Options', 'nosniff');
 
         $response->headers->set('Referrer-Policy', 'no-referrer');
+
+        $response->headers->set('Cross-Origin-Resource-Policy', 'same-origin'); // or 'same-site' or 'cross-origin'
 
         //commenting out my CSP implementation to re place it with composer package spatie/laravel-csp
         //new CSP setup in app\Policies\ContentSecurityPolicy.php

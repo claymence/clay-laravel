@@ -29,11 +29,12 @@ class ContentSecurityPolicy extends Policy
             //->addNonceForDirective(Directive::SCRIPT)
             //nonce setup / vite integration in app\Support\LaravelViteNonceGenerator.php
 
-            /* ->addDirective(Directive::STYLE, [
-                'self'
-            ]) */
+            ->addDirective(Directive::STYLE, [
+                'self',
+                'https://fonts.bunny.net/'
+            ])
 
-            //->addNonceForDirective(Directive::STYLE)
+            ->addNonceForDirective(Directive::STYLE)
 
             ->addDirective(Directive::FONT, [
                 'https://fonts.bunny.net/'
@@ -58,6 +59,16 @@ class ContentSecurityPolicy extends Policy
             ->addDirective(Directive::BASE, [
                 'self'
             ])
+
+            /* 
+                directives to check
+
+                BLOCK_ALL_MIXED_CONTENT
+                PLUGIN
+                REQUIRE_TRUSTED_TYPES_FOR
+                UPGRADE_INSECURE_REQUESTS
+                
+            */
 
         ;
     }

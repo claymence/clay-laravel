@@ -20,10 +20,10 @@ return Application::configure(basePath: dirname(__DIR__))
 
         // Append / prepend SecurityHeadersMiddleware to run on every HTTP request
         // use append() or prepend() ?
-        $middleware->append(SecurityHeadersMiddleware::class);
+        $middleware->prepend(SecurityHeadersMiddleware::class);
 
         // Add CSP Headers middleware from package spatie/laravel-csp
-        $middleware->append(AddCspHeaders::class);
+        $middleware->prepend(AddCspHeaders::class);
 
     })
 
