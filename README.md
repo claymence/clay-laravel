@@ -1,7 +1,7 @@
 # clay-laravel
 my personal web app project
 
-*Laravel, Livewire, Tailwind CSS, OOP, MVC*
+*Laravel, Livewire, Tailwind CSS, Vite, OOP, MVC*
 
 ## features
 - user registration and login
