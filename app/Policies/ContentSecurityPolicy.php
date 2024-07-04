@@ -29,12 +29,12 @@ class ContentSecurityPolicy extends Policy
             //->addNonceForDirective(Directive::SCRIPT)
             //nonce setup / vite integration in app\Support\LaravelViteNonceGenerator.php
 
-            ->addDirective(Directive::STYLE, [
+            /* ->addDirective(Directive::STYLE, [
                 'self',
                 'https://fonts.bunny.net/'
-            ])
+            ]) */
 
-            ->addNonceForDirective(Directive::STYLE)
+            //->addNonceForDirective(Directive::STYLE)
 
             ->addDirective(Directive::FONT, [
                 'https://fonts.bunny.net/'

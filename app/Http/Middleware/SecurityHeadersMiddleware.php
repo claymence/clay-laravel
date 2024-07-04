@@ -25,7 +25,7 @@ class SecurityHeadersMiddleware
 
         $response->headers->set('Referrer-Policy', 'no-referrer');
 
-        $response->headers->set('Cross-Origin-Resource-Policy', 'same-origin'); // or 'same-site' or 'cross-origin'
+        $response->headers->set('Cross-Origin-Resource-Policy', 'same-origin'); // 'same-origin' 'same-site' or 'cross-origin'
 
         //commenting out my CSP implementation to re place it with composer package spatie/laravel-csp
         //new CSP setup in app\Policies\ContentSecurityPolicy.php
