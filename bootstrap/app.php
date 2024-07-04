@@ -15,14 +15,21 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware) {
 
-        // role middleware for permission checks
+        /* 
+            defined middleware below with alias for use in routes\web.php
+         */
+
+        // for access control, checks permissions attached to the users role
         $middleware->alias(['role' => RoleMiddleware::class]);
 
-        // Append / prepend SecurityHeadersMiddleware to run on every HTTP request
-        // use append() or prepend() ?
+        /* 
+            defined middleware below with append / prepend to run on every HTTP request
+         */
+
+        // HTTP headers for security
         $middleware->prepend(SecurityHeadersMiddleware::class);
 
-        // Add CSP Headers middleware from package spatie/laravel-csp
+        // CSP defined in app\Policies\ContentSecurityPolicy.php utilizing package spatie/laravel-csp
         $middleware->prepend(AddCspHeaders::class);
 
     })
