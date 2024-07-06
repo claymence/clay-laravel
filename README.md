@@ -1,14 +1,16 @@
-# clay-laravel
-a web app made with laravel, livewire & tailwind css
+**my personal web app project**
 
-## features
+>*Laravel, Livewire, Tailwind CSS, Vite, OOP, MVC*
+
+# features
+### implemented
 - user registration and login
 - user and role administration
 - "chirps" (microblog example from laravel tutorial)
 - testing jwstapi.com API
 - testing lichess.org API
 
-## planned features
+### planned
 - e-mail verification
 - e-mail notifications
 - user settings
@@ -18,12 +20,12 @@ a web app made with laravel, livewire & tailwind css
 - stockfish features for training/analyzing (blunder warnings, ..)
 - playing chess against other users
 
-## deployment
+# deployment
 the [`deploy`](https://github.com/claymence/clay-laravel/tree/deploy) branch gets deployed at [claymence.de](https://claymence.de/) on push
 
 [`.github\workflows\deploy.yml`](https://github.com/claymence/clay-laravel/blob/deploy/.github/workflows/deploy.yml)
 
-## documentation
+# documentation
 
 ### entity relationship diagram
 ```mermaid
