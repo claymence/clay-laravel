@@ -37,7 +37,8 @@ class ContentSecurityPolicy extends Policy
             //->addNonceForDirective(Directive::STYLE)
 
             ->addDirective(Directive::FONT, [
-                'https://fonts.bunny.net/'
+                'https://fonts.bunny.net/',
+                'https://cdn.jsdelivr.net/gh/devicons/'
             ])
 
             ->addDirective(Directive::FORM_ACTION, [

@@ -10,6 +10,12 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
+        
+        <!-- Icons -->
+        <!-- https://devicon.dev -->
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+
         <!-- Styles & Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
@@ -24,7 +30,7 @@
 
                     <header class="grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3">
                         <div class="flex lg:justify-center lg:col-start-2">
-                            <img class="h-16" src="{{ Vite::asset('resources/images/logos/logoipsum-248.svg') }}" alt="Logo">
+                            <img class="h-16" src="{{ Vite::asset('resources/images/logos/logo-v1.svg') }}" alt="Logo">
                         </div>
                         @if (Route::has('login'))
                             <livewire:welcome.navigation />
@@ -40,6 +46,24 @@
                                     <div class="mt-5 text-lg/relaxed font-semibold">
                                         welcome to my personal web app project
                                     </div>
+                                    <div class="mt-5 text-5xl space-x-6">
+                                        <i class="devicon-laravel-original"></i>
+                                        <i class="devicon-livewire-plain"></i>
+                                        <!-- <i class="devicon-livewire-plain-wordmark"></i> -->
+                                        <i class="devicon-tailwindcss-original"></i>
+                                        <!-- <i class="devicon-php-plain"></i>
+                                        <i class="devicon-javascript-plain"></i>
+                                        <i class="devicon-html5-plain"></i>
+                                        <i class="devicon-markdown-original"></i>
+                                        <i class="devicon-nginx-original"></i>
+                                        <i class="devicon-axios-plain"></i>
+                                        <i class="devicon-sqlite-plain"></i>
+                                        <i class="devicon-mysql-original"></i>
+                                        <i class="devicon-npm-original-wordmark"></i>
+                                        <i class="devicon-vscode-plain"></i>
+                                        <i class="devicon-git-plain"></i>
+                                        <i class="devicon-github-original"></i> -->
+                                    </div>
                                     <div class="mt-5 text-base/relaxed">
                                         source code and documentation at 
                                             <a class="underline" href="https://github.com/claymence/clay-laravel" target="_blank" rel="noopener noreferrer">
@@ -54,13 +78,13 @@
                         <div class="grid grid-cols-2 lg:grid-cols-3 items-center gap-2 py-10 brightness-150">
                             
                             <div class="flex justify-center h-24">
-                                <img src="{{ Vite::asset('resources/images/badges/logoipsum-229.svg') }}" alt="badge">
+                                <img src="{{ Vite::asset('resources/images/badges/ultra-clear.svg') }}" alt="badge">
                             </div>
                             <div class="flex justify-center h-48">
-                                <img src="{{ Vite::asset('resources/images/badges/logoipsum-230.svg') }}" alt="badge">
+                                <img src="{{ Vite::asset('resources/images/badges/hyper-best-award-winning.svg') }}" alt="badge">
                             </div>
                             <div class="flex justify-center h-24 col-span-2 lg:col-span-1">
-                                <img src="{{ Vite::asset('resources/images/badges/logoipsum-228.svg') }}" alt="badge">
+                                <img src="{{ Vite::asset('resources/images/badges/international-mega-standard.svg') }}" alt="badge">
                             </div>
 
                         </div>
