@@ -15,7 +15,6 @@
         <!-- https://devicon.dev -->
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
-
         <!-- Styles & Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
@@ -66,9 +65,10 @@
                                     </div>
                                     <div class="mt-5 text-base/relaxed">
                                         source code and documentation at 
-                                            <a class="underline" href="https://github.com/claymence/clay-laravel" target="_blank" rel="noopener noreferrer">
-                                                GitHub
-                                            </a>
+                                        <i class="devicon-github-original"></i>
+                                        <a class="underline" href="https://github.com/claymence/clay-laravel" target="_blank" rel="noopener noreferrer">
+                                            GitHub
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +93,7 @@
 
                     <footer class="grid grid-cols-2 py-16 text-center text-sm text-black dark:text-white/70">
                         <div>Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})</div>
-                        <div>legal notice coming soon</div>
+                        <div>work in progress - legal notice coming soon</div>
                     </footer>
                 </div>
             </div>
