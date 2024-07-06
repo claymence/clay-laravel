@@ -24,7 +24,7 @@
 
                     <header class="grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3">
                         <div class="flex lg:justify-center lg:col-start-2">
-                            <img class="h-16" src="{{ Vite::asset('resources\assets\images\logos\logoipsum-248.svg') }}" alt="Logo">
+                            <img class="h-16" src="{{ Vite::asset('resources\images\logos\logoipsum-248.svg') }}" alt="Logo">
                         </div>
                         @if (Route::has('login'))
                             <livewire:welcome.navigation />
@@ -47,13 +47,13 @@
 
                         <div class="grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3">
                             <div class="flex justify-center">
-                                <img src="{{ Vite::asset('resources\assets\images\badges\logoipsum-228.svg') }}" alt="badge">
+                                <img src="{{ Vite::asset('resources\images\badges\logoipsum-228.svg') }}" alt="badge">
                             </div>
                             <div class="flex justify-center">
-                                <img src="{{ Vite::asset('resources\assets\images\badges\logoipsum-229.svg') }}" alt="badge">
+                                <img src="{{ Vite::asset('resources\images\badges\logoipsum-229.svg') }}" alt="badge">
                             </div>
                             <div class="flex justify-center">
-                                <img src="{{ Vite::asset('resources\assets\images\badges\logoipsum-230.svg') }}" alt="badge">
+                                <img src="{{ Vite::asset('resources\images\badges\logoipsum-230.svg') }}" alt="badge">
                             </div>
                         </div>
                     </main>
