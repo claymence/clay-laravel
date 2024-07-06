@@ -32,32 +32,39 @@
                     </header>
 
                     <main class="mt-6">
+
                         <div class="grid gap-6 lg:grid-cols-5 lg:gap-8">
-                            <div class="flex justify-center lg:col-start-2 lg:col-span-3 w-45 gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800">
-                                <div class="pt-3 sm:pt-5">
-                                    <div class="mt-4 text-base/relaxed">
+
+                            <div class="flex justify-center text-center lg:col-start-2 lg:col-span-3 w-45 gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800">
+                                <div class="pt-3 sm:pt-5 pb-4">
+                                    <div class="mt-5 text-lg/relaxed font-semibold">
                                         welcome to my personal web app project
                                     </div>
-                                    <div class="mt-4 text-base/relaxed">
-                                        source code and documentation at <a class="underline" href="https://github.com/claymence/clay-laravel" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                    <div class="mt-5 text-base/relaxed">
+                                        source code and documentation at 
+                                            <a class="underline" href="https://github.com/claymence/clay-laravel" target="_blank" rel="noopener noreferrer">
+                                                GitHub
+                                            </a>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
 
-                        <div class="grid grid-cols-2 items-center gap-2 py-10">
+                        <div class="grid grid-cols-2 lg:grid-cols-3 items-center gap-2 py-10 brightness-150">
                             
-                            <div class="flex justify-center">
+                            <div class="flex justify-center h-24">
                                 <img src="{{ Vite::asset('resources/images/badges/logoipsum-229.svg') }}" alt="badge">
                             </div>
-                            <div class="flex justify-center">
+                            <div class="flex justify-center h-48">
                                 <img src="{{ Vite::asset('resources/images/badges/logoipsum-230.svg') }}" alt="badge">
                             </div>
-                            <div class="flex justify-center col-span-2">
+                            <div class="flex justify-center h-24 col-span-2 lg:col-span-1">
                                 <img src="{{ Vite::asset('resources/images/badges/logoipsum-228.svg') }}" alt="badge">
                             </div>
 
                         </div>
+
                     </main>
 
                     <footer class="grid grid-cols-2 py-16 text-center text-sm text-black dark:text-white/70">
