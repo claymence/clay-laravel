@@ -1,6 +1,6 @@
 <?php
 /* 
-copied from laravels detailed debug mode error screen
+adapted from laravels detailed debug mode error screen
 vendor\laravel\framework\src\Illuminate\Foundation\resources\exceptions\renderer\components\theme-switcher.blade.php
  */
 ?>
@@ -72,8 +72,6 @@ vendor\laravel\framework\src\Illuminate\Foundation\resources\exceptions\renderer
 <!-- 
 class="absolute right-0 z-10 flex origin-top-right flex-col rounded-md bg-white shadow-xl ring-1 ring-gray-900/5 dark:bg-gray-800"
 class="absolute bottom-full flex flex-col rounded-md bg-white shadow-xl ring-1 ring-gray-900/5 dark:bg-gray-800"
-
-bg-white shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] dark:bg-zinc-900 dark:ring-zinc-800
 -->
     <div
         x-show="menu"

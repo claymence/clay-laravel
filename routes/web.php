@@ -36,7 +36,7 @@ Route::get('settings', [SettingsController::class, 'index'])
     ->name('settings');
 
 Route::get('chirps', [ChirpController::class, 'index'])
-    ->middleware(['auth', 'verified'])
+    /* ->middleware(['auth', 'verified']) */
     ->name('chirps');
 
 Route::get('/jwst', [JwstController::class, 'index'])

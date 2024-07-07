@@ -50,7 +50,7 @@ new class extends Component {
 
 }; ?>
 
-<div class="mt-6 bg-white shadow-sm rounded-lg divide-y"> 
+<div class="mt-6 bg-white dark:bg-zinc-800 shadow-sm rounded-lg divide-y"> 
     @foreach ($chirps as $chirp)
         <div class="p-6 flex space-x-2" wire:key="{{ $chirp->id }}">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 -scale-x-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -59,10 +59,10 @@ new class extends Component {
             <div class="flex-1">
                 <div class="flex justify-between items-center">
                     <div>
-                        <span class="text-gray-800">{{ $chirp->user->name }}</span>
-                        <small class="ml-2 text-sm text-gray-600">{{ $chirp->created_at->format('j M Y, g:i a') }}</small>
+                        <span class="text-gray-800 dark:text-white/40">{{ $chirp->user->name }}</span>
+                        <small class="ml-2 text-sm text-gray-600 dark:text-white/30">{{ $chirp->created_at->format('j M Y, g:i a') }}</small>
                         @unless ($chirp->created_at->eq($chirp->updated_at))
-                            <small class="text-sm text-gray-600"> &middot; {{ __('edited') }}</small>
+                            <small class="text-sm text-gray-600 dark:text-white/30"> &middot; {{ __('edited') }}</small>
                         @endunless
                     </div>
                     @if ($chirp->user->is(auth()->user()))
@@ -88,7 +88,7 @@ new class extends Component {
                 @if ($chirp->is($editing)) 
                     <livewire:chirps.edit :chirp="$chirp" :key="$chirp->id" />
                 @else
-                    <p class="mt-4 text-lg text-gray-900">{{ $chirp->message }}</p>
+                    <p class="mt-4 text-lg text-gray-900 dark:text-white/60">{{ $chirp->message }}</p>
                 @endif 
             </div>
         </div>
