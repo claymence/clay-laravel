@@ -13,7 +13,7 @@
                     {{ __("Hello!") }}
                 </div>
                 <!-- text-gray-900 -->
-                <div class="p-6">info</div>
+                <!-- <div class="p-6">info</div> -->
             </div>
         </div>
     </div>

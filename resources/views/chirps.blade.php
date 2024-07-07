@@ -17,7 +17,7 @@
                     @auth
                         <livewire:chirps.create />
                     @else
-                        login to create chirps
+                        login to create, edit and delete your own chirps
                     @endauth
         
                     <livewire:chirps.list />
