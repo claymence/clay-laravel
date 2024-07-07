@@ -22,8 +22,8 @@
         <div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
 
             <img 
-                class="fixed invert opacity-5 inset-0 h-screen w-screen object-cover transform scale-150" 
-                src="{{ Vite::asset('resources/images/backgrounds/logoipsum-276.svg') }}"
+                class="fixed dark:invert opacity-10 inset-0 h-screen w-screen object-cover transform scale-150" 
+                src="{{ Vite::asset('resources/images/backgrounds/rounded-lines.svg') }}"
             />
 
             <div class="relative min-h-screen flex flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white">
@@ -96,9 +96,15 @@
 
                     </main>
 
-                    <footer class="grid grid-cols-2 pb-16 text-center text-sm text-black dark:text-white/70">
+                    <footer class="grid grid-cols-3 pb-16 text-center text-sm text-black dark:text-white/70">
                         <div>Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})</div>
-                        <div>work in progress - legal notice coming soon</div>
+                        <div class="flex justify-center">
+                            @include('custom-ui-elements.theme-switcher')
+                        </div>
+                        <div>
+                            - work in progress -<br>
+                            legal notice coming soon
+                        </div>
                     </footer>
                 </div>
             </div>

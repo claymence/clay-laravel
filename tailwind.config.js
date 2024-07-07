@@ -18,4 +18,8 @@ export default {
     },
 
     plugins: [forms],
+
+    // added to enable manual theme switching
+    // https://tailwindcss.com/docs/dark-mode#toggling-dark-mode-manually
+    darkMode: 'selector',
 };
