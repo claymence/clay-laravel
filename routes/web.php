@@ -24,7 +24,7 @@ example:
     ->name('root');
 
 Route::view('dashboard', 'dashboard')
-    ->middleware(['auth', 'verified'])
+    /* ->middleware(['auth', 'verified']) */
     ->name('dashboard');
 
 Route::view('profile', 'profile')

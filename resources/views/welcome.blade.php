@@ -22,13 +22,19 @@
     <body class="antialiased font-sans">
         <div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
 
-            <!-- <img id="background" class="absolute -left-20 top-0 max-w-[877px]" src="https://laravel.com/assets/img/welcome/background.svg" /> -->
+            <img 
+                id="background" 
+                class="absolute invert opacity-5 inset-0 w-screen h-screen object-cover transform scale-150" 
+                src="{{ Vite::asset('resources/images/backgrounds/logoipsum-276.svg') }}"
+            />
 
             <div class="relative min-h-screen flex flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white">
                 <div class="relative w-full max-w-2xl px-6 lg:max-w-7xl">
 
-                    <header class="grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3">
-                        <div class="flex lg:justify-center lg:col-start-2">
+                    <!-- <header class="grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3"> -->
+                    <header class="grid grid-cols-2 items-center gap-2 pt-10 lg:grid-cols-1">
+                        <!-- <div class="flex lg:justify-center lg:col-start-2"> -->
+                        <div class="flex lg:justify-center">
                             <img class="h-16" src="{{ Vite::asset('resources/images/logos/logo-v1.svg') }}" alt="Logo">
                         </div>
                         @if (Route::has('login'))
@@ -36,21 +42,21 @@
                         @endif
                     </header>
 
-                    <main class="mt-6">
-
+                    <main>
                         <div class="grid gap-6 lg:grid-cols-5 lg:gap-8">
 
-                            <div class="flex justify-center text-center lg:col-start-2 lg:col-span-3 w-45 gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800">
+                            <div class="flex justify-center text-center lg:col-start-2 lg:col-span-3 w-45 gap-4 p-2 rounded-lg bg-white shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] dark:bg-zinc-900 dark:ring-zinc-800">
                                 <div class="pt-3 sm:pt-5 pb-4">
-                                    <div class="mt-5 text-lg/relaxed font-semibold">
+                                    <div class="my-5 text-lg/relaxed font-semibold">
                                         welcome to my personal web app project
                                     </div>
-                                    <div class="mt-5 text-5xl space-x-6">
+                                    <div class="my-5 text-5xl space-x-6">
                                         <i class="devicon-laravel-original"></i>
                                         <i class="devicon-livewire-plain"></i>
-                                        <!-- <i class="devicon-livewire-plain-wordmark"></i> -->
                                         <i class="devicon-tailwindcss-original"></i>
-                                        <!-- <i class="devicon-php-plain"></i>
+                                        <!-- 
+                                        <i class="devicon-livewire-plain-wordmark"></i>
+                                        <i class="devicon-php-plain"></i>
                                         <i class="devicon-javascript-plain"></i>
                                         <i class="devicon-html5-plain"></i>
                                         <i class="devicon-markdown-original"></i>
@@ -61,9 +67,10 @@
                                         <i class="devicon-npm-original-wordmark"></i>
                                         <i class="devicon-vscode-plain"></i>
                                         <i class="devicon-git-plain"></i>
-                                        <i class="devicon-github-original"></i> -->
+                                        <i class="devicon-github-original"></i>
+                                         -->
                                     </div>
-                                    <div class="mt-5 text-base/relaxed">
+                                    <div class="my-5 text-base/relaxed">
                                         source code and documentation at 
                                         <i class="devicon-github-original"></i>
                                         <a class="underline" href="https://github.com/claymence/clay-laravel" target="_blank" rel="noopener noreferrer">
@@ -75,7 +82,7 @@
 
                         </div>
 
-                        <div class="grid grid-cols-2 lg:grid-cols-3 items-center gap-2 py-10 brightness-150">
+                        <div class="grid grid-cols-2 lg:grid-cols-3 items-center gap-2 pt-8 pb-6 brightness-150">
                             
                             <div class="flex justify-center h-24">
                                 <img src="{{ Vite::asset('resources/images/badges/ultra-clear.svg') }}" alt="badge">
@@ -91,7 +98,7 @@
 
                     </main>
 
-                    <footer class="grid grid-cols-2 py-16 text-center text-sm text-black dark:text-white/70">
+                    <footer class="grid grid-cols-2 pb-16 text-center text-sm text-black dark:text-white/70">
                         <div>Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})</div>
                         <div>work in progress - legal notice coming soon</div>
                     </footer>
