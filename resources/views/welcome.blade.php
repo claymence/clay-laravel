@@ -24,7 +24,7 @@
 
             <img 
                 id="background" 
-                class="absolute invert opacity-5 inset-0 w-screen h-screen object-cover transform scale-150" 
+                class="fixed invert opacity-5 inset-0 h-screen w-screen object-cover transform scale-150" 
                 src="{{ Vite::asset('resources/images/backgrounds/logoipsum-276.svg') }}"
             />
 
