@@ -23,7 +23,6 @@
         <div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
 
             <img 
-                id="background" 
                 class="fixed invert opacity-5 inset-0 h-screen w-screen object-cover transform scale-150" 
                 src="{{ Vite::asset('resources/images/backgrounds/logoipsum-276.svg') }}"
             />
