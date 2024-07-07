@@ -58,8 +58,8 @@ new class extends Component
                 </div>
             </div>
 
-            <!-- Settings Dropdown -->
         @auth
+            <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6">
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
@@ -91,6 +91,24 @@ new class extends Component
                         </button>
                     </x-slot>
                 </x-dropdown>
+            </div>
+        @else
+            <!-- login and register links for unauthenticated users -->
+            <div class="hidden sm:flex sm:items-center sm:ms-6">
+                <a
+                    href="{{ route('login') }}"
+                    class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                >
+                    Log in
+                </a>
+                @if (Route::has('register'))
+                    <a
+                        href="{{ route('register') }}"
+                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                    >
+                        Register
+                    </a>
+                @endif
             </div>
         @endauth
 
