@@ -67,8 +67,8 @@ vendor\laravel\framework\src\Illuminate\Foundation\resources\exceptions\renderer
         :class="theme ? 'text-gray-700 dark:text-gray-300' : 'text-gray-400 dark:text-gray-600 hover:text-gray-500 focus:text-gray-500 dark:hover:text-gray-500 dark:focus:text-gray-500'"
         @click="menu = ! menu"
     >
-        <x-laravel-exceptions-renderer::icons.sun class="block h-5 w-5 dark:hidden" />
-        <x-laravel-exceptions-renderer::icons.moon class="hidden h-5 w-5 dark:block" />
+        <!-- <x-laravel-exceptions-renderer::icons.sun class="block h-5 w-5 dark:hidden" />
+        <x-laravel-exceptions-renderer::icons.moon class="hidden h-5 w-5 dark:block" /> --> Theme-Switcher
     </button>
 <!-- 
 class="absolute right-0 z-10 flex origin-top-right flex-col rounded-md bg-white shadow-xl ring-1 ring-gray-900/5 dark:bg-gray-800"
@@ -87,7 +87,7 @@ bg-white shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] da
             :class="theme === 'light' ? 'text-gray-900 dark:text-gray-100' : 'text-gray-500 dark:text-gray-400'"
             @click="lightMode()"
         >
-            <x-laravel-exceptions-renderer::icons.sun class="h-5 w-5" />
+            <!-- <x-laravel-exceptions-renderer::icons.sun class="h-5 w-5" /> -->
             Light
         </button>
         <button
@@ -95,7 +95,7 @@ bg-white shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] da
             :class="theme === 'dark' ? 'text-gray-900 dark:text-gray-100' : 'text-gray-500 dark:text-gray-400'"
             @click="darkMode()"
         >
-            <x-laravel-exceptions-renderer::icons.moon class="h-5 w-5" />
+            <!-- <x-laravel-exceptions-renderer::icons.moon class="h-5 w-5" /> -->
             Dark
         </button>
         <button
@@ -103,7 +103,7 @@ bg-white shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] da
             :class="theme === undefined ? 'text-gray-900 dark:text-gray-100' : 'text-gray-500 dark:text-gray-400'"
             @click="systemMode()"
         >
-            <x-laravel-exceptions-renderer::icons.computer-desktop class="h-5 w-5" />
+            <!-- <x-laravel-exceptions-renderer::icons.computer-desktop class="h-5 w-5" /> -->
             System
         </button>
     </div>

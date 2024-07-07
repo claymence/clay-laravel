@@ -5,7 +5,6 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 //use Illuminate\Support\Facades\View;
 //use Illuminate\Support\Facades\Vite;
-use Illuminate\Support\Facades\Blade;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -31,10 +30,5 @@ class AppServiceProvider extends ServiceProvider
         //debugging test for vite nonce
         //Vite::useCspNonce();
 
-
-        // debugging theme switcher
-        Blade::component('laravel-exceptions-renderer::icons.sun', 'laravel-exceptions-renderer-icons-sun');
-        Blade::component('laravel-exceptions-renderer::icons.moon', 'laravel-exceptions-renderer-icons-moon');
-        Blade::component('laravel-exceptions-renderer::icons.computer-desktop', 'laravel-exceptions-renderer-icons-computer-desktop');
     }
 }
