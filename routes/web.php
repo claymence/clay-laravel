@@ -40,7 +40,7 @@ Route::get('chirps', [ChirpController::class, 'index'])
     ->name('chirps');
 
 Route::get('/jwst', [JwstController::class, 'index'])
-    ->middleware(['auth', 'verified'])
+    //->middleware(['auth', 'verified'])
     ->name('jwst');
 
 Route::get('admin-dashboard', [AdminDashboardController::class, 'index'])
