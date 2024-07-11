@@ -1,17 +1,15 @@
 <div>
-    <button wire:click="fetchData">Fetch Data (suffix list from jwstapi.com API)</button>
-    @if($error)
-        <div>Error: {{ $error }}</div>
-    @else
-        <ul>
-            @foreach($data as $item)
-                <li>
-                    <h2>{{ $item['mission'] }}</h2>
-                    <p>{{ $item['description'] }}</p>
-                    <p>Suffix: {{ $item['suffix'] }}</p>
-                    <p>Instruments: {{ implode(', ', array_column($item['instruments'], 'instrument')) }}</p>
-                </li>
+
+    @if (!empty($data))
+        <div class="thumbnails">
+            @foreach ($data as $item)
+                <img src="{{ $item['location'] }}" alt="Thumbnail" width="100" height="100">
             @endforeach
-        </ul>
+        </div>
+        {{-- Livewire Pagination Links --}}
+        {{ $data->links() }}
+    @else
+        <p>No data available.</p>
     @endif
+
 </div>
