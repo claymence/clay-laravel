@@ -6,18 +6,41 @@ use Livewire\Component;
 use Illuminate\Support\Facades\Http;
 //use Illuminate\Support\Facades\Cache;
 use Livewire\WithPagination;
+use Illuminate\Pagination\Paginator;
 
 class JwstApiTest extends Component
 {
     public $data;
+
+    public $data2;
+    
     public $error = null;
 
     use WithPagination;
 
-    public $perPage = 15;
-    public $page;
+    public $perPage = 10;
+    public $page = 1;
 
-    public function fetchData($page = 1, $perPage = 15)
+
+    public function mount()
+    {
+        /* $this->fetchThumbnails(); */
+    }
+
+    public function fetchSuffixList()
+    {
+        $response = Http::withHeaders([
+            'X-API-KEY' => env('JWST_API_KEY')
+        ])->get('https://api.jwstapi.com/suffix/list');
+
+        if ($response->successful()) {
+            $this->data2 = $response->json()['body'];
+        } else {
+            $this->error = $response->body();
+        }
+    }
+
+    public function fetchThumbnails($page = 1, $perPage = 10)
     {
         $response = Http::withHeaders([
             'X-API-KEY' => env('JWST_API_KEY')
@@ -31,7 +54,9 @@ class JwstApiTest extends Component
                 return isset($item['suffix']) && $item['suffix'] === '_thumb' && $item['file_type'] === 'jpg';
             });
 
-            $this->data = $thumbnails->paginate($perPage); // Paginate the data
+            /* $this->data = $thumbnails->paginate($perPage); */
+            
+            /* $this->data = $thumbnails->forPage($page, $perPage); */
 
         } else {
             $this->error = $response->body();
@@ -40,35 +65,10 @@ class JwstApiTest extends Component
 
     public function render()
     {
-        $data = $this->data;
-
         return view('livewire.jwst.jwst-api-test', [
-            'data' => $data,
+            'data' => $this->data,
+            'data2' => $this->data2,
             'error' => $this->error
         ]);
     }
 }
-
-
-// TEST CODE - test with api call below successful
-
-/* public function fetchData()
-{
-    $response = Http::withHeaders([
-        'X-API-KEY' => env('JWST_API_KEY')
-    ])->get('https://api.jwstapi.com/suffix/list');
-
-    if ($response->successful()) {
-        $this->data = $response->json()['body'];
-    } else {
-        $this->error = $response->body();
-    }
-} */
-
-/* public function render()
-{
-    return view('livewire.jwst.jwst-api-test', [
-        'data' => $this->data,
-        'error' => $this->error
-    ]);
-} */

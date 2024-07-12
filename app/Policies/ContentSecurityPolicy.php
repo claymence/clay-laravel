@@ -41,6 +41,18 @@ class ContentSecurityPolicy extends Policy
                 'https://cdn.jsdelivr.net/gh/devicons/'
             ])
 
+            /* ->addDirective(Directive::IMG, [
+                'self',
+                'https://api.jwstapi.com/',
+                'https://stpubdata-jwst.stsci.edu/'
+            ]) */
+
+            /* ->addDirective(Directive::CONNECT, [
+                'self',
+                'https://api.jwstapi.com/',
+                'https://stpubdata-jwst.stsci.edu/'
+            ]) */
+
             ->addDirective(Directive::FORM_ACTION, [
                 'self'
             ])
