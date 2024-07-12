@@ -6,14 +6,13 @@ use Livewire\Component;
 use Illuminate\Support\Facades\Http;
 //use Illuminate\Support\Facades\Cache;
 use Livewire\WithPagination;
-use Illuminate\Pagination\Paginator;
 
 class JwstApiTest extends Component
 {
     public $data;
 
     public $data2;
-    
+
     public $error = null;
 
     use WithPagination;
@@ -24,7 +23,7 @@ class JwstApiTest extends Component
 
     public function mount()
     {
-        /* $this->fetchThumbnails(); */
+        $this->fetchThumbnails();
     }
 
     public function fetchSuffixList()
@@ -54,9 +53,13 @@ class JwstApiTest extends Component
                 return isset($item['suffix']) && $item['suffix'] === '_thumb' && $item['file_type'] === 'jpg';
             });
 
-            /* $this->data = $thumbnails->paginate($perPage); */
+            // without conversion to json
+            /* $thumbnails = collect($response['body'])->filter(function ($item) {
+                return isset($item['suffix']) && $item['suffix'] === '_thumb' && $item['file_type'] === 'jpg';
+            }); */
             
-            /* $this->data = $thumbnails->forPage($page, $perPage); */
+            $this->data = $thumbnails->forPage($page, $perPage);
+            /* $this->data = $thumbnails; */
 
         } else {
             $this->error = $response->body();
@@ -67,6 +70,7 @@ class JwstApiTest extends Component
     {
         return view('livewire.jwst.jwst-api-test', [
             'data' => $this->data,
+            /* 'data' => $this->data->forPage($this->page, $this->perPage), */
             'data2' => $this->data2,
             'error' => $this->error
         ]);

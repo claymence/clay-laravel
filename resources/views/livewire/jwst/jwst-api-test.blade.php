@@ -1,11 +1,11 @@
 <div>
-    <div>
+    <div class="flex py-4">
         jwstapi.com API
     </div>
 
-    <div>
+    <div class="flex py-4">
         <button wire:click="fetchSuffixList">Fetch Suffix List</button>
-        @if ($data2 && $data2->isNotEmpty())
+        @if ($data2)
             @if ($error)
                 <div>Error: {{ $error }}</div>
             @else
@@ -23,9 +23,9 @@
         @endif
     </div>
 
-    <div>
+    <div class="flex py-4">
         <button wire:click="fetchThumbnails">Fetch Thumbnails</button>
-        @if ($data && $data->isNotEmpty())
+        @if ($data)
             @if ($error)
                 <div>Error: {{ $error }}</div>
             @else
@@ -35,10 +35,8 @@
                     @endforeach
                 </div>
                 {{-- Livewire Pagination Links --}}
-                {{ $data->links() }}
+                {{-- $data->links() --}}
             @endif
-        @else
-            <p>No data available.</p>
         @endif
     </div>
 </div>
