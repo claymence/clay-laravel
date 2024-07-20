@@ -5,7 +5,7 @@
 
     <x-slot name="header">
         <h2 class="font-semibold text-xl leading-tight">
-            {{ __('Chirps') }}
+            {{ __('Comments') }}
         </h2>
     </x-slot>
 
@@ -17,7 +17,7 @@
                     @auth
                         <livewire:chirps.create />
                     @else
-                        login to create, edit and delete your own chirps
+                        login to create, edit and delete your own comments
                     @endauth
         
                     <livewire:chirps.list />

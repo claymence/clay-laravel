@@ -6,7 +6,9 @@
 ### implemented
 - user registration and login
 - user and role administration
-- "chirps" (microblog example from laravel tutorial)
+- comments (microblog example from laravel tutorial "chirps")
+
+### work in progress
 - testing jwstapi.com API
 - testing lichess.org API
 

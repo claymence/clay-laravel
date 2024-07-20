@@ -40,9 +40,9 @@ Route::get('settings', [SettingsController::class, 'index'])
     ->middleware(['auth', 'verified'])
     ->name('settings');
 
-Route::get('chirps', [ChirpController::class, 'index'])
+Route::get('comments', [ChirpController::class, 'index'])
     /* ->middleware(['auth', 'verified']) */
-    ->name('chirps');
+    ->name('comments');
 
 Route::get('/jwst', [JwstController::class, 'index'])
     //->middleware(['auth', 'verified'])

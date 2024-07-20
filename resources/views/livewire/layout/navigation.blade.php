@@ -34,13 +34,13 @@ new class extends Component
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
                         {{ __('Dashboard') }}
                     </x-nav-link>
-
-                    <x-nav-link :href="route('chirps')" :active="request()->routeIs('chirps')" wire:navigate>
-                        {{ __('Chirps') }}
-                    </x-nav-link>
         
                     <x-nav-link :href="route('jwst')" :active="request()->routeIs('jwst')" wire:navigate>
-                        {{ __('JWST') }}
+                        {{ __('James Webb Space Telescope') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('comments')" :active="request()->routeIs('comments')" wire:navigate>
+                        {{ __('Comments') }}
                     </x-nav-link>
 
                     <x-nav-link :href="route('info')" :active="request()->routeIs('info')" wire:navigate>
@@ -136,13 +136,13 @@ new class extends Component
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
-            
-            <x-responsive-nav-link :href="route('chirps')" :active="request()->routeIs('chirps')" wire:navigate>
-                {{ __('Chirps') }}
-            </x-responsive-nav-link>
     
             <x-responsive-nav-link :href="route('jwst')" :active="request()->routeIs('jwst')" wire:navigate>
-                {{ __('JWST') }}
+                {{ __('James Webb Space Telescope') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('comments')" :active="request()->routeIs('comments')" wire:navigate>
+                {{ __('Comments') }}
             </x-responsive-nav-link>
 
             <x-responsive-nav-link :href="route('info')" :active="request()->routeIs('info')" wire:navigate>
