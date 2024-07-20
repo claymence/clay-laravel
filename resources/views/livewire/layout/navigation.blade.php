@@ -42,6 +42,10 @@ new class extends Component
                     <x-nav-link :href="route('jwst')" :active="request()->routeIs('jwst')" wire:navigate>
                         {{ __('JWST') }}
                     </x-nav-link>
+
+                    <x-nav-link :href="route('info')" :active="request()->routeIs('info')" wire:navigate>
+                        {{ __('Info') }}
+                    </x-nav-link>
         @auth
                     @can('has-permission', 'view_admin-dashboard')
                         <x-nav-link :href="route('admin-dashboard')" :active="request()->routeIs('admin-dashboard')" wire:navigate>
@@ -139,6 +143,10 @@ new class extends Component
     
             <x-responsive-nav-link :href="route('jwst')" :active="request()->routeIs('jwst')" wire:navigate>
                 {{ __('JWST') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('info')" :active="request()->routeIs('info')" wire:navigate>
+                {{ __('Info') }}
             </x-responsive-nav-link>
     @auth
             @can('has-permission', 'view_admin-dashboard')

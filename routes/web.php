@@ -5,6 +5,7 @@ use App\Http\Controllers\DevSandboxController;
 use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\ChirpController;
+use App\Http\Controllers\InfoController;
 use Illuminate\Support\Facades\Route;
 
 /* 
@@ -30,6 +31,10 @@ Route::view('dashboard', 'dashboard')
 Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
+
+Route::get('info', [InfoController::class, 'index'])
+    /* ->middleware(['auth', 'verified']) */
+    ->name('info');
 
 Route::get('settings', [SettingsController::class, 'index'])
     ->middleware(['auth', 'verified'])
