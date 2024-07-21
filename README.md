@@ -28,7 +28,7 @@ the [`deploy`](https://github.com/claymence/clay-laravel/tree/deploy) branch get
 [`.github\workflows\deploy.yml`](https://github.com/claymence/clay-laravel/blob/deploy/.github/workflows/deploy.yml)
 
 # license
-[MIT License](https://github.com/claymence/clay-laravel?tab=MIT-1-ov-file#readme)
+[MIT](https://github.com/claymence/clay-laravel?tab=MIT-1-ov-file#readme)
 
 # documentation
 
