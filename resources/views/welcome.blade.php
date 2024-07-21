@@ -48,6 +48,9 @@
                                     <div class="mb-8 text-lg/relaxed font-semibold">
                                         welcome to my personal web app project
                                     </div>
+                                    <div class="mb-8 text-lg/relaxed">
+                                        look inside via the dashboard link above
+                                    </div>
                                     <div class="my-8 text-5xl space-x-6">
                                         <i class="devicon-laravel-original"></i>
                                         <i class="devicon-livewire-plain"></i>
@@ -87,8 +90,8 @@
                             @include('custom-ui-elements.theme-switcher')
                         </div>
                         <div>
-                            - work in progress -<br>
-                            legal notice coming soon
+                            WORK IN PROGRESS<br>
+                            Contact | Legal notice
                         </div>
                     </footer>
                 </div>

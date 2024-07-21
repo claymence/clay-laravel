@@ -48,8 +48,8 @@
                     @include('custom-ui-elements.theme-switcher')
                 </div>
                 <div>
-                    - work in progress -<br>
-                    legal notice coming soon
+                    WORK IN PROGRESS<br>
+                    Contact | Legal notice
                 </div>
             </footer>
         </div>
