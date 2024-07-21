@@ -1,7 +1,4 @@
 <div>
-    <div class="flex py-4">
-        jwstapi.com API
-    </div>
 
     <div class="flex py-4">
         <button wire:click="fetchSuffixList">Fetch Suffix List</button>
@@ -39,4 +36,5 @@
             @endif
         @endif
     </div>
+    
 </div>
