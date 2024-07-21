@@ -1,36 +1,47 @@
-**my personal web app project**
+### a personal web app project
 
->*Laravel, Livewire, Tailwind CSS, Vite, OOP, MVC*
+#### made with
+
+*Laravel* | *Livewire* | *Alpine.js* | *Tailwind CSS* | *Vite* | *SQLite*
+
+>explore the tech stack and used tools at my [info page](https://claymence.de/info)
 
 # features
+
 ### implemented
 - user registration and login
 - user and role administration
 - comments (microblog example from laravel tutorial "chirps")
 
 ### work in progress
-- testing jwstapi.com API
-- testing lichess.org API
+- browse images from the James Webb Space Telescope
+- user settings
 
-### planned
+### planned / ideas
 - e-mail verification
 - e-mail notifications
-- user settings
-- browse images from JWST (James Webb Space Telescope) API
-- like / vote for JWST showcase images
+- like / fav list JWST images
+- vote for JWST showcase images
+- testing lichess.org API
 - playing chess against stockfish (chess engine)
 - stockfish features for training/analyzing (blunder warnings, ..)
 - playing chess against other users
 
 # deployment
+
 the [`deploy`](https://github.com/claymence/clay-laravel/tree/deploy) branch gets deployed at [claymence.de](https://claymence.de/) on push
 
 [`.github\workflows\deploy.yml`](https://github.com/claymence/clay-laravel/blob/deploy/.github/workflows/deploy.yml)
 
 # license
+
 [MIT](https://github.com/claymence/clay-laravel?tab=MIT-1-ov-file#readme)
 
 # documentation
+
+*OOP*
+
+*MVC*
 
 ### entity relationship diagram
 ```mermaid
