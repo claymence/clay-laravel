@@ -6,6 +6,7 @@ use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\ChirpController;
 use App\Http\Controllers\InfoController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /* 
@@ -32,10 +33,6 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
-Route::get('info', [InfoController::class, 'index'])
-    /* ->middleware(['auth', 'verified']) */
-    ->name('info');
-
 Route::get('settings', [SettingsController::class, 'index'])
     ->middleware(['auth', 'verified'])
     ->name('settings');
@@ -47,6 +44,14 @@ Route::get('comments', [ChirpController::class, 'index'])
 Route::get('/jwst', [JwstController::class, 'index'])
     //->middleware(['auth', 'verified'])
     ->name('jwst');
+
+Route::get('info', [InfoController::class, 'index'])
+    /* ->middleware(['auth', 'verified']) */
+    ->name('info');
+
+Route::get('contact', [ContactController::class, 'index'])
+    /* ->middleware(['auth', 'verified']) */
+    ->name('contact');
 
 Route::get('admin-dashboard', [AdminDashboardController::class, 'index'])
     ->middleware(['auth', 'verified', 'role:manage_users'])

@@ -29,20 +29,16 @@
         <div class="mt-12 mb-6 px-8 w-full">
             The displayed data is provided via API by 
             <a href="https://jwstapi.com/" target="_blank" class="text-blue-500 hover:underline">
-                jwstapi.com
-            </a>
+                jwstapi.com</a>
             and sourced from
             <a href="https://outerspace.stsci.edu/display/MASTDATA/JWST+AWS+Bulk+Download+Scripts" target="_blank" class="text-blue-500 hover:underline">
-                MAST.
-            </a><br>
+                MAST</a>.<br>
             This work uses observations made with the NASA/ESA/CSA 
             <a href="https://www.esa.int/Science_Exploration/Space_Science/Webb" target="_blank" class="text-blue-500 hover:underline">
-                James Webb Space Telescope.
-            </a><br>
+                James Webb Space Telescope</a>.<br>
             The data were obtained from the 
             <a href="https://archive.stsci.edu/publishing/mission-acknowledgements" target="_blank" class="text-blue-500 hover:underline">
-                Mikulski Archive for Space Telescopes
-            </a>
+                Mikulski Archive for Space Telescopes</a>
             at the Space Telescope Science Institute,<br>
             which is operated by the Association of Universities for Research in Astronomy, Inc., under NASA contract NAS 5-03127 for JWST.
         </div>

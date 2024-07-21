@@ -30,9 +30,9 @@
                 <div class="relative w-full max-w-2xl px-6 lg:max-w-7xl">
 
                     <!-- <header class="grid grid-cols-2 items-center gap-2 py-10 lg:grid-cols-3"> -->
-                    <header class="grid grid-cols-2 items-center gap-2 pt-10 lg:grid-cols-1">
+                    <header class="grid grid-cols-1 items-center gap-2 pt-10">
                         <!-- <div class="flex lg:justify-center lg:col-start-2"> -->
-                        <div class="flex lg:justify-center">
+                        <div class="flex pl-6 lg:justify-center">
                             <img class="h-16" src="{{ Vite::asset('resources/images/logos/logo-v1.svg') }}" alt="Logo">
                         </div>
                         @if (Route::has('login'))
@@ -41,23 +41,25 @@
                     </header>
 
                     <main>
-                        <div class="grid gap-6 lg:grid-cols-5 lg:gap-8">
+                        <!-- <div class="grid gap-6 lg:grid-cols-5 lg:gap-8"> -->
+                        <div class="grid justify-center">
 
-                            <div class="flex justify-center text-center lg:col-start-2 lg:col-span-3 w-45 gap-4 p-2 rounded-lg bg-white shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] dark:bg-zinc-900 dark:ring-zinc-800">
-                                <div class="pt-3 sm:pt-5 pb-4">
-                                    <div class="mb-8 text-lg/relaxed font-semibold">
+                            <!-- <div class="flex justify-center text-center lg:col-start-2 lg:col-span-3 max-w-xl w-full gap-4 p-2 rounded-lg bg-white shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] dark:bg-zinc-900/50 dark:ring-zinc-800/50"> -->
+                            <div class="flex justify-center text-center max-w-xl w-full py-6 px-10 rounded-lg bg-white shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] dark:bg-zinc-900/50 dark:ring-zinc-800/50">
+                                <div class="">
+                                    <div class="mb-2 text-lg/relaxed font-semibold">
                                         welcome to my personal web app project
                                     </div>
-                                    <div class="mb-8 text-lg/relaxed">
+                                    <div class="mb-10 text-lg/relaxed">
                                         look inside via the dashboard link above
                                     </div>
-                                    <div class="my-8 text-5xl space-x-6">
+                                    <div class="mb-6 text-5xl space-x-6">
                                         <i class="devicon-laravel-original"></i>
                                         <i class="devicon-livewire-plain"></i>
                                         <i class="devicon-alpinejs-original"></i>
                                         <i class="devicon-tailwindcss-original"></i>
                                     </div>
-                                    <div class="mt-8 text-lg/relaxed">
+                                    <div class="text-lg/relaxed">
                                         <i class="devicon-github-original"></i>
                                         <a class="underline" href="https://github.com/claymence/clay-laravel" target="_blank" rel="noopener noreferrer">
                                             GitHub
@@ -84,14 +86,16 @@
 
                     </main>
 
-                    <footer class="grid grid-cols-3 pb-16 text-center text-sm text-black dark:text-white/70">
-                        <div>Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})</div>
-                        <div class="flex justify-center">
+                    <footer class="grid grid-cols-2 gap-2 pb-10 pt-2 text-center text-sm text-black dark:text-white/70">
+                        <div class="flex justify-center col-span-2">
                             @include('custom-ui-elements.theme-switcher')
                         </div>
+                        <div>Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})</div>
                         <div>
-                            WORK IN PROGRESS<br>
-                            Contact | Legal notice
+                            <a href="{{ url('/contact') }}"
+                            class="rounded-md px-3 py-2 ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:hover:text-white/80 dark:focus-visible:ring-white">
+                                Contact | Legal notice
+                            </a>
                         </div>
                     </footer>
                 </div>

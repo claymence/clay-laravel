@@ -67,7 +67,7 @@ vendor\laravel\framework\src\Illuminate\Foundation\resources\exceptions\renderer
         :class="theme ? 'text-gray-700 dark:text-gray-300' : 'text-gray-400 dark:text-gray-600 hover:text-gray-500 focus:text-gray-500 dark:hover:text-gray-500 dark:focus:text-gray-500'"
         @click="menu = ! menu"
     >
-        Theme-Switcher
+        Theme
     </button>
 <!-- 
 class="absolute right-0 z-10 flex origin-top-right flex-col rounded-md bg-white shadow-xl ring-1 ring-gray-900/5 dark:bg-gray-800"

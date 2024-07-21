@@ -42,14 +42,17 @@
             </main>
             
             <!-- <footer class="grid grid-cols-3 pb-16 text-center text-sm text-black dark:text-white/70 fixed bottom-0 w-full"> -->
-            <footer class="grid grid-cols-3 mt-8 pt-6 pb-8 text-center w-full text-sm text-black dark:text-white/70 bg-white dark:bg-zinc-800/25 shadow">
-                <div>Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})</div>
-                <div class="flex justify-center">
+            <footer class="grid grid-cols-2 gap-2 mt-8 pt-6 pb-8 text-center w-full text-sm text-black dark:text-white/70 bg-white dark:bg-zinc-800/25 shadow">
+                
+                <div class="flex justify-center col-span-2">
                     @include('custom-ui-elements.theme-switcher')
                 </div>
+                <div>Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})</div>
                 <div>
-                    WORK IN PROGRESS<br>
-                    Contact | Legal notice
+                    <a href="{{ url('/contact') }}"
+                    class="rounded-md px-3 py-2 ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:hover:text-white/80 dark:focus-visible:ring-white">
+                        Contact | Legal notice
+                    </a>
                 </div>
             </footer>
         </div>
