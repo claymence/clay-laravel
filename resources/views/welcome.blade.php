@@ -45,31 +45,16 @@
 
                             <div class="flex justify-center text-center lg:col-start-2 lg:col-span-3 w-45 gap-4 p-2 rounded-lg bg-white shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] dark:bg-zinc-900 dark:ring-zinc-800">
                                 <div class="pt-3 sm:pt-5 pb-4">
-                                    <div class="my-5 text-lg/relaxed font-semibold">
+                                    <div class="mb-8 text-lg/relaxed font-semibold">
                                         welcome to my personal web app project
                                     </div>
-                                    <div class="my-5 text-5xl space-x-6">
+                                    <div class="my-8 text-5xl space-x-6">
                                         <i class="devicon-laravel-original"></i>
                                         <i class="devicon-livewire-plain"></i>
+                                        <i class="devicon-alpinejs-original"></i>
                                         <i class="devicon-tailwindcss-original"></i>
-                                        <!-- 
-                                        <i class="devicon-livewire-plain-wordmark"></i>
-                                        <i class="devicon-php-plain"></i>
-                                        <i class="devicon-javascript-plain"></i>
-                                        <i class="devicon-html5-plain"></i>
-                                        <i class="devicon-markdown-original"></i>
-                                        <i class="devicon-nginx-original"></i>
-                                        <i class="devicon-axios-plain"></i>
-                                        <i class="devicon-sqlite-plain"></i>
-                                        <i class="devicon-mysql-original"></i>
-                                        <i class="devicon-npm-original-wordmark"></i>
-                                        <i class="devicon-vscode-plain"></i>
-                                        <i class="devicon-git-plain"></i>
-                                        <i class="devicon-github-original"></i>
-                                         -->
                                     </div>
-                                    <div class="my-5 text-base/relaxed">
-                                        source code and documentation at 
+                                    <div class="mt-8 text-lg/relaxed">
                                         <i class="devicon-github-original"></i>
                                         <a class="underline" href="https://github.com/claymence/clay-laravel" target="_blank" rel="noopener noreferrer">
                                             GitHub

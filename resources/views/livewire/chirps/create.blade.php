@@ -27,7 +27,7 @@ new class extends Component {
 
     placeholder="{{ __('What\'s on your mind?') }}"
 
-    class="block w-full border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm dark:bg-zinc-800"
+    class="block w-full border-gray-300/25 focus:border-orange-500/75 focus:ring focus:ring-orange-500 focus:ring-opacity-50 rounded-md shadow-sm dark:bg-zinc-800"
 
 ></textarea>
 
