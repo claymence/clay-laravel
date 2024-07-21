@@ -20,10 +20,12 @@
                     <!-- <img src="path/to/logo1.png" alt="Logo" class="mx-auto mb-2"> -->
                     <i class="devicon-laravel-original text-6xl"></i>
                     <h4 class="mt-2 font-extrabold text-lg">
-                        Laravel
+                        <a href="https://laravel.com/" target="_blank" class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white/80 dark:hover:text-white/65 dark:focus-visible:ring-white">
+                            Laravel
+                        </a>
                     </h4>
                     <p class="mt-2">
-                        The framework this app is built with.
+                        The PHP framework this app is built with.
                     </p>
                 </div>
 
@@ -31,20 +33,24 @@
                     <!-- <img src="path/to/logo1.png" alt="Logo" class="mx-auto mb-2"> -->
                     <i class="devicon-livewire-plain text-6xl"></i>
                     <h4 class="mt-2 font-extrabold text-lg">
-                        Livewire
+                        <a href="https://livewire.laravel.com/" target="_blank" class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white/80 dark:hover:text-white/65 dark:focus-visible:ring-white">
+                            Livewire
+                        </a>
                     </h4>
                     <p class="mt-2">
-                        Frontend framework for interactive UIs.
+                        Laravel front-end framework for dynamic UIs.
                     </p>
                 </div>
 
                 <div class="bg-white dark:bg-zinc-900 dark:bg-opacity-50 overflow-hidden shadow-sm sm:rounded-lg my-3 p-4 w-48 text-center">
                     <!-- <img src="path/to/logo1.png" alt="Logo" class="mx-auto mb-2"> -->
                     <h4 class="mt-2 font-extrabold text-lg">
-                        Alpine.js
+                        <a href="https://alpinejs.dev/" target="_blank" class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white/80 dark:hover:text-white/65 dark:focus-visible:ring-white">
+                            Alpine.js
+                        </a>
                     </h4>
                     <p class="mt-2">
-                        Lightweight JS framework included in Livewire.
+                        Lightweight JavaScript framework included in Livewire.
                     </p>
                 </div>
 
@@ -52,7 +58,9 @@
                     <!-- <img src="path/to/logo1.png" alt="Logo" class="mx-auto mb-2"> -->
                     <i class="devicon-tailwindcss-original text-6xl"></i>
                     <h4 class="mt-2 font-extrabold text-lg">
-                        Tailwind CSS
+                        <a href="https://tailwindcss.com/" target="_blank" class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white/80 dark:hover:text-white/65 dark:focus-visible:ring-white">
+                            Tailwind CSS
+                        </a>
                     </h4>
                     <p class="mt-2">
                         CSS framework ready to use in Laravel.
@@ -62,7 +70,9 @@
                 <div class="bg-white dark:bg-zinc-900 dark:bg-opacity-50 overflow-hidden shadow-sm sm:rounded-lg my-3 p-4 w-48 text-center">
                     <!-- <img src="path/to/logo1.png" alt="Logo" class="mx-auto mb-2"> -->
                     <h4 class="mt-2 font-extrabold text-lg">
-                        Vite
+                        <a href="https://vitejs.dev/" target="_blank" class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white/80 dark:hover:text-white/65 dark:focus-visible:ring-white">
+                            Vite
+                        </a>
                     </h4>
                     <p class="mt-2">
                         Frontend build / dev tooling used in Laravel.
@@ -72,10 +82,12 @@
                     <!-- <img src="path/to/logo1.png" alt="Logo" class="mx-auto mb-2"> -->
                     <i class="devicon-sqlite-plain text-6xl"></i>
                     <h4 class="mt-2 font-extrabold text-lg">
-                        SQLite
+                        <a href="https://www.sqlite.org/" target="_blank" class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white/80 dark:hover:text-white/65 dark:focus-visible:ring-white">
+                            SQLite
+                        </a>
                     </h4>
                     <p class="mt-2">
-                        Database currently in use.
+                        Database currently in use, managed with Laravel's Eloquent ORM.
                     </p>
                 </div>
             </div>
@@ -94,7 +106,9 @@
                     <!-- <img src="path/to/logo1.png" alt="Logo" class="mx-auto mb-2"> -->
                     <i class="devicon-github-original text-6xl"></i>
                     <h4 class="mt-2 font-extrabold text-lg">
-                        GitHub
+                        <a href="https://www.github.com/" target="_blank" class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white/80 dark:hover:text-white/65 dark:focus-visible:ring-white">
+                            GitHub
+                        </a>
                     </h4>
                     <p class="mt-2">
                         Git source control, project management and issue tracking.<br>
@@ -106,10 +120,12 @@
                 <div class="bg-white dark:bg-zinc-900 dark:bg-opacity-50 overflow-hidden shadow-sm sm:rounded-lg my-3 p-4 w-48 text-center">
                     <!-- <img src="path/to/logo1.png" alt="Logo" class="mx-auto mb-2"> -->
                     <h4 class="mt-2 font-extrabold text-lg">
-                        Mozilla Observatory
+                        <a href="https://developer.mozilla.org/en-US/observatory/" target="_blank" class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white/80 dark:hover:text-white/65 dark:focus-visible:ring-white">
+                            MDN HTTP Observatory
+                        </a>
                     </h4>
                     <p class="mt-2">
-                        Service for testing HTTP security.
+                        Service by Mozilla for testing HTTP security.
                     </p>
                 </div>
             </div>
