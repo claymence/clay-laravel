@@ -38,7 +38,8 @@ class ContentSecurityPolicy extends Policy
 
             ->addDirective(Directive::FONT, [
                 'https://fonts.bunny.net/',
-                'https://cdn.jsdelivr.net/gh/devicons/'
+                'https://cdn.jsdelivr.net/gh/devicons/',
+                'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/'
             ])
 
             /* ->addDirective(Directive::IMG, [
