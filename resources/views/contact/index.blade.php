@@ -8,31 +8,51 @@
 
     <div class="pt-24 pb-16">
         <div class="max-w-fit mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-zinc-900/50 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="my-16 mx-20">
-                    <!-- <div class="mb-8">
-                        Clemens Wähner
-                    </div> -->
-                    <div x-data="{ part1: 'clay', part2: 'dev', part3: 'mailbox', part4: 'org' }">
+            <div class="bg-white dark:bg-zinc-900/50 overflow-hidden shadow-sm sm:rounded-lg pl-52 pt-44 pr-24 pb-20">
+                <!-- <div class="grid grid-cols-2"> -->
+                <!-- <div>
+                    <i class="fa-regular fa-envelope text-5xl">
+                        <div class="" x-data="{ part1: 'clay', part2: 'dev', part3: 'mailbox', part4: 'org' }">
+                            <a :href="'mailto:' + part1 + '.' + part2 + '@' + part3 + '.' + part4">
+                                <span x-text="part1" class="text-2xl"></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-1.5 w-1.5 inline mr-0.4" viewBox="0 0 10 10" fill="currentColor">
+                                    <circle cx="5" cy="5" r="4"/>
+                                </svg>
+                                <span x-text="part2" class="text-2xl"></span>
+                                <i class="fas fa-at text-2xl mx-1"></i>
+                                <span x-text="part3" class="text-2xl"></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-1.5 w-1.5 inline ml-0.5" viewBox="0 0 10 10" fill="currentColor">
+                                    <circle cx="5" cy="5" r="4"/>
+                                </svg>
+                                <span x-text="part4" class="text-2xl"></span>
+                            </a>
+                        </div>
+                    </i>
+                </div> -->
+
+                <div class="">
+
+                    <i class="fa-regular fa-envelope text-5xl mb-6"></i>
+                    <!-- <i class="fa-regular fa-envelope-open text-5xl mb-6"></i> -->
+
+                    <div class="" x-data="{ part1: 'clay', part2: 'dev', part3: 'mailbox', part4: 'org' }">
                         <a :href="'mailto:' + part1 + '.' + part2 + '@' + part3 + '.' + part4">
-                            <span x-text="part1" class="text-3xl"></span>
-                            <!-- <span class="text-xs"><i class="fas fa-circle-dot"></i></span> -->
-                            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" viewBox="0 0 20 20" fill="currentColor">
-                                <circle cx="10" cy="10" r="2"/>
-                            </svg> -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-2 w-2 inline" viewBox="0 0 10 10" fill="currentColor">
+                            <span x-text="part1" class="text-2xl"></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-1.5 w-1.5 inline mr-0.4" viewBox="0 0 10 10" fill="currentColor">
                                 <circle cx="5" cy="5" r="4"/>
                             </svg>
-                            <span x-text="part2" class="text-3xl"></span>
-                            <span class="text-3xl"><i class="fas fa-at"></i></span>
-                            <span x-text="part3" class="text-3xl"></span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-2 w-2 inline" viewBox="0 0 10 10" fill="currentColor">
+                            <span x-text="part2" class="text-2xl"></span>
+                            <i class="fas fa-at text-2xl mx-1"></i>
+                            <span x-text="part3" class="text-2xl"></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-1.5 w-1.5 inline ml-0.5" viewBox="0 0 10 10" fill="currentColor">
                                 <circle cx="5" cy="5" r="4"/>
                             </svg>
-                            <span x-text="part4" class="text-3xl"></span>
+                            <span x-text="part4" class="text-2xl"></span>
                         </a>
                     </div>
+                    
                 </div>
+
             </div>
         </div>
     </div>
