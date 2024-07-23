@@ -9,7 +9,7 @@
 
 ## overview
 
-#### implemented
+### implemented
 - user registration and login ([Laravel Breeze](https://laravel.com/docs/11.x/starter-kits#laravel-breeze))
 - comments ("[Chirps](https://bootcamp.laravel.com/livewire/creating-chirps)")
 - user and role administration
