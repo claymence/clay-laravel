@@ -9,9 +9,11 @@
 
     <div class="grid grid-cols-4 gap-4 max-w-7xl mx-auto">
         <div class="col-span-4">
-            <div class="py-9">
-                <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                    <div class="bg-white dark:bg-zinc-900/50 overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="pt-16 pb-8">
+                <!-- <div class="max-w-7xl mx-auto sm:px-6 lg:px-8"> -->
+                <div class="max-w-fit mx-auto sm:px-6 lg:px-8 text-center">
+                    <!-- <div class="bg-white dark:bg-zinc-900/50 overflow-hidden shadow-sm sm:rounded-lg"> -->
+                    <div class="overflow-hidden">
                         <div class="p-6 font-extrabold text-lg">
                             <?php echo e(__("Hello!")); ?>
                         </div>

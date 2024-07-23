@@ -6,12 +6,14 @@
 
 >explore the tech stack and used tools at my [info page](https://claymence.de/info)
 
-# features
 
-### implemented
-- user registration and login
+## overview
+
+#### implemented
+- user registration and login ([Laravel Breeze](https://laravel.com/docs/11.x/starter-kits#laravel-breeze))
+- comments ("[Chirps](https://bootcamp.laravel.com/livewire/creating-chirps)")
 - user and role administration
-- comments (microblog example from laravel tutorial "chirps")
+- light/dark theme
 
 ### work in progress
 - browse images from the James Webb Space Telescope
@@ -27,17 +29,17 @@
 - stockfish features for training/analyzing (blunder warnings, ..)
 - playing chess against other users
 
-# deployment
+## deployment
 
 the [`deploy`](https://github.com/claymence/clay-laravel/tree/deploy) branch gets deployed at [claymence.de](https://claymence.de/) on push
 
 [`.github\workflows\deploy.yml`](https://github.com/claymence/clay-laravel/blob/deploy/.github/workflows/deploy.yml)
 
-# license
+## license
 
 [MIT](https://github.com/claymence/clay-laravel?tab=MIT-1-ov-file#readme)
 
-# documentation
+## more info & diagrams
 
 *OOP*
 
