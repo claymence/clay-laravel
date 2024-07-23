@@ -22,7 +22,7 @@
                             I am exploring full stack web development and Laravel with this app.
                         </div>
                         <p class="px-5 py-5">
-                            You can check out technical project details at the Info page and 
+                            You can check out technical details at the Info page and 
                             <a class="" href="https://github.com/claymence/clay-laravel" target="_blank" rel="noopener noreferrer">
                                 <i class="devicon-github-original ml-1"></i> GitHub</a>.
                         </p>

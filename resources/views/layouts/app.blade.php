@@ -25,7 +25,9 @@
 
     <body class="font-sans antialiased">
         <!-- <div class="min-h-screen bg-gray-100"> -->
-        <div class="flex flex-col min-h-screen bg-gray-50 text-black/50 dark:bg-black dark:text-white/50 selection:bg-[#FF7A00] selection:text-white">
+        <!-- <div class="flex flex-col min-h-screen bg-gray-50 text-black/60 dark:bg-black dark:text-white/60 selection:bg-[#FF7A00] selection:text-white"> -->
+        <div class="flex flex-col min-h-screen bg-gray-50 text-black/60 dark:bg-zinc-950 dark:text-white/60 selection:bg-[#FF7A00] selection:text-white">
+        
 
             <livewire:layout.navigation />
 

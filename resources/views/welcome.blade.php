@@ -19,7 +19,8 @@
     </head>
 
     <body class="antialiased font-sans">
-        <div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
+        <!-- <div class="bg-gray-50 text-black/60 dark:bg-black dark:text-white/60"> -->
+        <div class="bg-gray-50 text-black/60 dark:bg-zinc-950 dark:text-white/60">
 
             <img 
                 class="fixed dark:invert opacity-10 inset-0 h-screen w-screen object-cover transform scale-150" 
@@ -45,15 +46,15 @@
                         <div class="grid justify-center">
 
                             <!-- <div class="flex justify-center text-center lg:col-start-2 lg:col-span-3 max-w-xl w-full gap-4 p-2 rounded-lg bg-white shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] dark:bg-zinc-900/50 dark:ring-zinc-800/50"> -->
-                            <div class="flex justify-center text-center max-w-xl w-full py-6 px-10 rounded-lg bg-white shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] dark:bg-zinc-900/50 dark:ring-zinc-800/50">
+                            <div class="flex justify-center text-center max-w-xl w-full py-7 px-10 rounded-lg bg-white shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] dark:shadow-zinc-700/20 ring-1 ring-white/[0.05] dark:bg-zinc-900/50 dark:ring-zinc-800/50">
                                 <div class="">
-                                    <div class="mb-2 text-lg/relaxed font-semibold">
+                                    <div class="mb-1 text-lg/relaxed font-semibold">
                                         welcome to my personal web app project
                                     </div>
                                     <div class="mb-10 text-lg/relaxed">
                                         look inside via the dashboard link above
                                     </div>
-                                    <div class="mb-6 text-5xl space-x-6">
+                                    <div class="mb-4 text-4xl space-x-6">
                                         <i class="devicon-laravel-original"></i>
                                         <i class="devicon-livewire-plain"></i>
                                         <i class="devicon-alpinejs-original"></i>
@@ -70,15 +71,18 @@
 
                         </div>
 
-                        <div class="grid grid-cols-2 lg:grid-cols-3 items-center gap-2 pt-8 pb-6 brightness-150">
+                        <!-- <div class="grid grid-cols-2 lg:grid-cols-3 items-center gap-2 pt-1 lg:pt-4 pb-1 brightness-150"> -->
+                        <div class="grid grid-cols-2 items-center gap-2 pt-8 pb-4 lg:pt-14 lg:pb-10 brightness-150">
                             
-                            <div class="flex justify-center h-24">
+                            <!-- <div class="flex justify-center pr-10 h-20 lg:justify-end"> -->
+                            <div class="flex justify-end h-20 pr-10 mx-8">
                                 <img src="{{ Vite::asset('resources/images/badges/ultra-clear.svg') }}" alt="badge">
                             </div>
-                            <div class="flex justify-center h-48">
+                            <!-- <div class="flex justify-center h-48">
                                 <img src="{{ Vite::asset('resources/images/badges/hyper-best-award-winning.svg') }}" alt="badge">
-                            </div>
-                            <div class="flex justify-center h-24 col-span-2 lg:col-span-1">
+                            </div> -->
+                            <!-- <div class="flex justify-start h-20 col-span-2 lg:col-span-1"> -->
+                            <div class="flex justify-start h-20">
                                 <img src="{{ Vite::asset('resources/images/badges/international-mega-standard.svg') }}" alt="badge">
                             </div>
 
@@ -86,7 +90,7 @@
 
                     </main>
 
-                    <footer class="grid grid-cols-2 gap-2 pb-10 pt-2 text-center text-sm text-black dark:text-white/70">
+                    <footer class="grid grid-cols-2 gap-2 pb-10 pt-1 text-center text-sm text-black dark:text-white/70">
                         <div class="flex justify-center col-span-2">
                             @include('custom-ui-elements.theme-switcher')
                         </div>
